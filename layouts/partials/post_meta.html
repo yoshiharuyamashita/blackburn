@@ -1,0 +1,21 @@
+<div class="post-meta">
+  <time><i class="fa fa-calendar fa-fw"></i>&nbsp;{{ .Date.Format "02 Jan 2006, 15:04" }}</time>
+
+  {{ $baseUrl := .Site.BaseURL }}
+
+  {{ if isset .Params "topics" }}
+    <br>
+    <i class="fa fa-folder fa-fw"></i>
+    {{ range .Params.topics }}
+      <a href="{{ $baseUrl }}/topics/{{ . | urlize }}">{{ . }}</a>
+    {{ end }}
+  {{ end }}
+
+  {{ if isset .Params "tags" }}
+    <br>
+    <i class="fa fa-tags fa-fw"></i>
+    {{ range .Params.tags }}
+      <a href="{{ $baseUrl }}/tags/{{ . | urlize }}">{{ . }}</a>
+    {{ end }}
+  {{ end }}
+</div>

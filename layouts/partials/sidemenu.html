@@ -1,0 +1,51 @@
+<!-- Menu toggle -->
+<a href="#menu" id="menuLink" class="menu-link">
+  <!-- Hamburger icon -->
+  <span></span>
+</a>
+<div id="menu">
+  <div class="pure-menu">
+    <ul class="pure-menu-list">
+      <li class="pure-menu-item">
+        <a class="pure-menu-link" href="/">Home</a>
+      </li>
+      <li class="pure-menu-item">
+        <a class="pure-menu-link" href="/post">Posts</a>
+      </li>
+
+      {{ range .Site.Pages.ByWeight }}
+      {{ if isset .Params "sidemenu" }}
+      <li class="pure-menu-item">
+        <a class="pure-menu-link" href="{{ .Permalink }}">{{ .Title }}</a>
+      </li>
+      {{ end }}
+      {{ end }}
+    </ul>
+  </div>
+  <div class="pure-menu">
+    <ul class="pure-menu-list">
+      <li class="pure-menu-item">
+        <a class="pure-menu-link" href="{{ .Site.BaseURL }}/index.xml"><i class="fa fa-rss fa-fw"></i>&nbsp;RSS</a>
+      </li>
+      {{ with .Site.Params.githubName }}
+      <li class="pure-menu-item">
+        <a class="pure-menu-link" href="https://github.com/{{ . }}"><i class="fa fa-github-alt fa-fw"></i>&nbsp;Github</a>
+      </li>
+      {{ end }}
+      {{ with .Site.Params.twitterName }}
+      <li class="pure-menu-item">
+        <a class="pure-menu-link" href="https://twitter.com/{{ . }}"><i class="fa fa-twitter fa-fw"></i>&nbsp;Twitter</a>
+      </li>
+      {{ end }}
+    </ul>
+  </div>
+  <div class="pure-g">
+    <div class="small-print pure-u-1 pure-u-md-1-1">
+      <small>{{ .Site.Copyright }}</small>
+    </div>
+    <div class="small-print pure-u-1 pure-u-md-1-1">
+      <small>Built with&nbsp;<a href="http://hugo.spf13.com/" target="_blank">Hugo</a></small>
+      <small>Theme&nbsp;<a href="https://github.com/yoshiharuyamashita" target="_blank">Blackburn</a></small>
+    </div>
+  </div>
+</div>

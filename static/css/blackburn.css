@@ -1,0 +1,30 @@
+a {
+  color: #3b8bba;
+  text-decoration: none;
+}
+a:hover,
+a:focus {
+  text-decoration: underline;
+}
+a:visited {
+  color: #265778;
+}
+
+.small-print {
+  font-size: 0.8em;
+  margin: 0.6em;
+}
+
+.post-meta {
+  margin: 1em 0;
+  font-size: 90%;
+}
+
+article > footer {
+  text-align: right;
+}
+
+.pagination {
+  border-top: 1px solid #eee;
+  margin-top: 2em;
+}

@@ -7,7 +7,9 @@
 
 <div class="content">
   {{ range .Paginator.Pages }}
-    {{ .Render "summary"}}
+    {{ if eq .Type "post" }}
+      {{ .Render "summary"}}
+    {{ end }}
   {{ end }}
 </div>
 

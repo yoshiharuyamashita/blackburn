@@ -29,6 +29,6 @@ article > footer {
 }
 
 .pagination {
-  border-top: 1px solid #eee;
-  margin-top: 2em;
+  padding: 2em 0;
+  margin: 2em 0;
 }

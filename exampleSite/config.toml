@@ -1,0 +1,26 @@
+baseurl = "http://replace-this-with-your-hugo-site.com/"
+languageCode = "en-us"
+title = "Blackburn Theme Demo"
+theme = "blackburn"
+author = "Yoshiharu Yamashita"
+copyright = "&copy; 2016. All rights reserved."
+canonifyurls = true
+paginate = 10
+
+[indexes]
+  tag = "tags"
+  topic = "topics"
+
+[params]
+  # Shown in the home page
+  subtitle = "A Hugo Theme"
+  twitter = "Your Twitter username"
+  facebook = "Your Facebook username"
+  instagram = "Your Instagram username"
+  github = "Your GitHub username"
+  stackoverflow = "Your Stack Overflow user ID (number)"
+  linkedin = "Your LinkedIn username"
+  googleAnalytics = "Your Google Analytics tracking ID"
+  disqus = "Your Disqus shortname"
+  # CSS name for highlight.js
+  highlightjs = "androidstudio"

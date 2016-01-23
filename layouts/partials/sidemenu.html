@@ -28,12 +28,6 @@
         <a class="pure-menu-link" href="{{ .Site.BaseURL }}/index.xml"><i class="fa fa-rss fa-fw"></i>&nbsp;RSS</a>
       </li>
 
-      {{ with .Site.Params.github }}
-      <li class="pure-menu-item">
-        <a class="pure-menu-link" href="https://github.com/{{ . }}" target="_blank"><i class="fa fa-github-alt fa-fw"></i>&nbsp;Github</a>
-      </li>
-      {{ end }}
-
       {{ with .Site.Params.twitter }}
       <li class="pure-menu-item">
         <a class="pure-menu-link" href="https://twitter.com/{{ . }}" target="_blank"><i class="fa fa-twitter fa-fw"></i>&nbsp;Twitter</a>
@@ -49,6 +43,12 @@
       {{ with .Site.Params.instagram }}
       <li class="pure-menu-item">
         <a class="pure-menu-link" href="https://instagram.com/{{ . }}" target="_blank"><i class="fa fa-instagram fa-fw"></i>&nbsp;Instagram</a>
+      </li>
+      {{ end }}
+
+      {{ with .Site.Params.github }}
+      <li class="pure-menu-item">
+        <a class="pure-menu-link" href="https://github.com/{{ . }}" target="_blank"><i class="fa fa-github-alt fa-fw"></i>&nbsp;Github</a>
       </li>
       {{ end }}
 

@@ -7,7 +7,7 @@
     <br>
     <i class="fa fa-folder fa-fw"></i>
     {{ range .Params.topics }}
-      <a href="{{ $baseUrl }}/topics/{{ . | urlize }}">{{ . }}</a>&nbsp;&#47;
+      <a class="post-taxonomy-topic" href="{{ $baseUrl }}/topics/{{ . | urlize }}">{{ . }}</a>
     {{ end }}
   {{ end }}
 
@@ -15,7 +15,7 @@
     <br>
     <i class="fa fa-tags fa-fw"></i>
     {{ range .Params.tags }}
-      <a href="{{ $baseUrl }}/tags/{{ . | urlize }}">{{ . }}</a>&nbsp;&#47;
+      <a class="post-taxonomy-tag" href="{{ $baseUrl }}/tags/{{ . | urlize }}">{{ . }}</a>
     {{ end }}
   {{ end }}
 </div>

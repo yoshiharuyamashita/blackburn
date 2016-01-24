@@ -24,6 +24,22 @@ a:visited {
   font-size: 90%;
 }
 
+.post-meta a {
+  margin: 0 0.1em;
+  padding: 0.3em 1em;
+  color: #fff;
+  font-size: 80%;
+  text-decoration: none;
+}
+
+a.post-taxonomy-topic {
+  background: #f37b1d;
+}
+
+a.post-taxonomy-tag {
+  background: #5aba59;
+}
+
 article > footer {
   text-align: right;
 }

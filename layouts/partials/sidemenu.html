@@ -4,6 +4,9 @@
   <span></span>
 </a>
 <div id="menu">
+  {{ with .Site.Params.brand }}
+    <a class="pure-menu-heading brand" href="/">{{ . | safeHTML }}</a>
+  {{ end }}
   <div class="pure-menu">
     <ul class="pure-menu-list">
       <li class="pure-menu-item">

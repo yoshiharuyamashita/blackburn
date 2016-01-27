@@ -56,6 +56,7 @@ paginate = 10
 [params]
   # Shown in the home page
   subtitle = "A Hugo Theme"
+  brand = "Brand name"
   twitter = "Your Twitter username"
   facebook = "Your Facebook username"
   instagram = "Your Instagram username"

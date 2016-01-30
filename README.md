@@ -63,6 +63,32 @@ paginate = 10
   # CSS name for highlight.js
   highlightjs = "androidstudio"
 
+[menu]
+  # Shown in the side menu.
+  [[menu.main]]
+    name = "Home"
+    pre = "<i class='fa fa-home fa-fw'></i>"
+    weight = 0
+    identifier = "home"
+    url = "/"
+  [[menu.main]]
+    name = "Posts"
+    pre = "<i class='fa fa-list fa-fw'></i>"
+    weight = 1
+    identifier = "post"
+    url = "/post/"
+  [[menu.main]]
+    name = "About"
+    pre = "<i class='fa fa-user fa-fw'></i>"
+    weight = 2
+    identifier = "about"
+    url = "/about/"
+  [[menu.main]]
+    name = "Contact"
+    pre = "<i class='fa fa-phone fa-fw'></i>"
+    weight = 3
+    url = "/contact/"
+
 [social]
   # Link your social networking accouns to the side menu
   # by entering your username or ID.
@@ -77,13 +103,15 @@ paginate = 10
 ## Usage
 
 * Write Markdown files in `content/post`
-* Add fixed pages (e.g., about.md) to the side menu by creating them in `content` and setting `sidemenu` to `true` in its front matter:
+* Add fixed pages (e.g., about.md) to the side menu by defining them under `[menu]` in the config.toml:
 
 ```toml
-title = "About"
-date = "2014-04-09"
-sidemenu = "true"
-description = "About me and this site"
+[[menu.main]]
+  name = "About"
+  pre = "<i class='fa fa-user fa-fw'></i>"
+  weight = 2
+  identifier = "about"
+  url = "/about/"
 ```
 
 ## License

@@ -2,7 +2,7 @@
 
   <div>
     <i class="fa fa-calendar fa-fw"></i>
-    <time>{{ .Date.Format "02 Jan 2006, 15:04" }}</time>
+    <time>{{ .Date.Format .Site.Params.dateFormat }}</time>
   </div>
 
   {{ $baseUrl := .Site.BaseURL }}

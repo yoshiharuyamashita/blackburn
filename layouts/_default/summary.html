@@ -1,8 +1,9 @@
 <article>
   <header>
     <h2><a href="{{ .Permalink }}">{{ .Title }}</a></h2>
-    <i class="fa fa-calendar fa-fw"></i>
-    <time>{{ .Date.Format .Site.Params.dateFormat }}</time>
+
+    {{ partial "post_meta.html" . }}
+
   </header>
 
   <p>

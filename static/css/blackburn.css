@@ -52,10 +52,6 @@ article > footer {
   border-bottom: 1px solid #eee;
 }
 
-.social {
-  font-size: 0.8em;
-}
-
 #menu .brand {
   font-family: Raleway;
   font-weight: bold;
@@ -65,4 +61,8 @@ article > footer {
   background: transparent;
   text-decoration: none;
   margin: 0.5em 0;
+}
+
+#menu .pure-menu {
+  font-size: 0.9em;
 }

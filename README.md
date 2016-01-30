@@ -57,17 +57,21 @@ paginate = 10
 [params]
   # Shown in the home page
   subtitle = "A Hugo Theme"
-  brand = "Brand name"
-  twitter = "Your Twitter username"
-  facebook = "Your Facebook username"
-  instagram = "Your Instagram username"
-  github = "Your GitHub username"
-  stackoverflow = "Your Stack Overflow user ID (number)"
-  linkedin = "Your LinkedIn username"
+  brand = "Blackburn"
   googleAnalytics = "Your Google Analytics tracking ID"
   disqus = "Your Disqus shortname"
   # CSS name for highlight.js
   highlightjs = "androidstudio"
+
+[social]
+  # Link your social networking accouns to the side menu
+  # by entering your username or ID.
+  twitter = "*"
+  facebook = "*"
+  instagram = "*"
+  github = "yoshiharuyamashita"
+  stackoverflow = "*"
+  linkedin = "*"
 ```
 
 ## Usage

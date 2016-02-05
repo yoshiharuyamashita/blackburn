@@ -35,6 +35,18 @@ article > footer {
   border-bottom: 1px solid #eee;
 }
 
+.prev-next-post .prev {
+  float: left;
+  text-align: left;
+  overflow: hidden;
+}
+
+.prev-next-post .next {
+  float: right;
+  text-align: right;
+  overflow: hidden;
+}
+
 #menu .brand {
   font-family: Raleway;
   font-weight: bold;

@@ -2,14 +2,14 @@
 <div class="prev-next-post pure-g">
   <div class="pure-u-1 pure-u-md-1-2">
     {{ if .Prev }}
-    <nav>
+    <nav class="prev">
       <a href="{{ .Prev.Permalink }}"><i class="fa fa-arrow-circle-left fa-fw fa-lg"></i>{{ .Prev.Title }}</a>
     </nav>
     {{ end }}
   </div>
   <div class="pure-u-1 pure-u-md-1-2">
     {{ if .Next }}
-    <nav>
+    <nav class="next">
       <a href="{{ .Next.Permalink }}">{{ .Next.Title }}<i class="fa fa-arrow-circle-right fa-fw fa-lg"></i></a>
     </nav>
     {{ end }}

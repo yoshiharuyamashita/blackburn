@@ -11,6 +11,9 @@
       {{ .Render "summary"}}
     {{ end }}
   {{ end }}
+
+  {{ partial "pagination.html" . }}
+
 </div>
 
 {{ partial "footer.html" . }}

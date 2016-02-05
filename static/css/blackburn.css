@@ -54,3 +54,7 @@ i {
   display: inline-block;
   margin-right: 0.2em;
 }
+
+.pagination {
+  text-align: center;
+}

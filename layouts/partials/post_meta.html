@@ -13,7 +13,7 @@
   <div>
     <i class="fa fa-folder fa-fw"></i>
     {{ range $k, $v := .Params.topics }}
-      <a class="post-taxonomy-topic" href="{{ $baseUrl }}/topics/{{ . | urlize }}">{{ . }}</a>{{ if lt $k (sub $count 1) }}&nbsp;&#47;{{ end }}
+      <a class="post-taxonomy-topic" href="{{ $baseUrl }}topics/{{ . | urlize }}">{{ . }}</a>{{ if lt $k (sub $count 1) }}&nbsp;&#47;{{ end }}
     {{ end }}
   </div>
   {{ end }}
@@ -25,7 +25,7 @@
   <div>
     <i class="fa fa-tags fa-fw"></i>
     {{ range $k, $v := .Params.tags }}
-      <a class="post-taxonomy-tag" href="{{ $baseUrl }}/tags/{{ . | urlize }}">{{ . }}</a>{{ if lt $k (sub $count 1) }}&nbsp;&#47;{{ end }}
+      <a class="post-taxonomy-tag" href="{{ $baseUrl }}tags/{{ . | urlize }}">{{ . }}</a>{{ if lt $k (sub $count 1) }}&nbsp;&#47;{{ end }}
     {{ end }}
   </div>
   {{ end }}

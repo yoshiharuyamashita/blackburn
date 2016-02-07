@@ -5,9 +5,7 @@
 </a>
 <div id="menu">
 
-  {{ with .Site.Params.brand }}
-    <a class="pure-menu-heading brand" href="/">{{ . | safeHTML }}</a>
-  {{ end }}
+  {{ partial "brand.html" . }}
 
   <div class="pure-menu">
     <ul class="pure-menu-list">

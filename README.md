@@ -1,6 +1,6 @@
 # Blackburn
 
-Blackburn is a clear and responsive theme for [Hugo](//gohugo.io).
+Blackburn is a clear and responsive theme for [Hugo](//gohugo.io). You can see it in action on my personal website [here](//yoshiharuyamashita.com/).
 
 ## Overview
 
@@ -16,8 +16,6 @@ Blackburn is a clear and responsive theme for [Hugo](//gohugo.io).
 * Web analytics by Google Analytics
 * Comments by Disqus
 * Icons by Font Awesome
-* Pagination
-* Favicon
 
 ## Screenshots
 

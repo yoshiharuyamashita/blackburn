@@ -5,6 +5,12 @@
       <a class="pure-menu-link" href="{{ .Site.BaseURL }}index.xml"><i class="fa fa-rss fa-fw"></i>RSS</a>
     </li>
 
+    {{ with .Site.Social.weibo }}
+    <li class="pure-menu-item">
+      <a class="pure-menu-link" href="http://weibo.com/{{ . }}" target="_blank"><i class="fa fa-weibo fa-fw"></i>Weibo</a>
+    </li>
+    {{ end }}
+
     {{ with .Site.Social.twitter }}
     <li class="pure-menu-item">
       <a class="pure-menu-link" href="https://twitter.com/{{ . }}" target="_blank"><i class="fa fa-twitter fa-fw"></i>Twitter</a>

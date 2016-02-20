@@ -2,6 +2,11 @@
   font-family: "Raleway", Helvetica, Arial, sans-serif
 }
 
+code {
+  background-color: rgba(0,0,0,0.04);
+  font-family: Consolas, "Liberation Mono", Menlo, Courier, monospace;
+}
+
 a {
   color: #3b8bba;
   text-decoration: none;

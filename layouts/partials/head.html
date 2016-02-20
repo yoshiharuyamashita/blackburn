@@ -7,13 +7,13 @@
   <title>{{ if .IsHome }}{{ .Title }}{{ else }}{{ .Title }} &middot; {{ .Site.Title }}{{ end }}</title>
 
   <!-- CSS -->
-  <link rel="stylesheet" href="http://yui.yahooapis.com/pure/0.6.0/pure-min.css">
+  <link rel="stylesheet" href="/css/pure/0.6.0/pure-min.css">
 
   {{ "<!--[if lte IE 8]>" | safeHTML }}
-  <link rel="stylesheet" href="http://yui.yahooapis.com/pure/0.6.0/grids-responsive-old-ie-min.css">
+  <link rel="stylesheet" href="/css/pure/0.6.0/grids-responsive-old-ie-min.css">
   {{ "<![endif]-->" | safeHTML }}
   {{ "<!--[if gt IE 8]><!-->" | safeHTML }}
-  <link rel="stylesheet" href="http://yui.yahooapis.com/pure/0.6.0/grids-responsive-min.css">
+  <link rel="stylesheet" href="/css/pure/0.6.0/grids-responsive-min.css">
   {{ "<!--<![endif]-->" | safeHTML }}
 
   {{ "<!--[if lte IE 8]>" | safeHTML }}

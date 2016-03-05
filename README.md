@@ -108,13 +108,13 @@ paginate = 10
 [social]
   # Link your social networking accouns to the side menu
   # by entering your username or ID.
-  
+
   # SNS microblogging
   twitter = "*"
   facebook = "*"
   googleplus = "*"
   weibo = "*"
-  
+
   # SNS photo/video sharing
   instagram = "*"
   flickr = "*"
@@ -123,14 +123,15 @@ paginate = 10
   vimeo = "*"
   vine = "*"
   slideshare = "*"
-  
+
   # SNS career oriented
   linkedin = "*"
   xing = "*"
-  
+
   # SNS news
   reddit = "*"
-  
+  hackernews = "*"
+
   # Techie
   github = "yoshiharuyamashita"
   bitbucket = "*"

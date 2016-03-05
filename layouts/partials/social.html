@@ -97,6 +97,12 @@
     </li>
     {{ end }}
 
+    {{ with .Site.Social.hackernews }}
+    <li class="pure-menu-item">
+      <a class="pure-menu-link" href="https://news.ycombinator.com/user?id={{ . }}" target="_blank"><i class="fa fa-hacker-news fa-fw"></i>Hacker News</a>
+    </li>
+    {{ end }}
+
     <!-- Techie -->
 
     {{ with .Site.Social.github }}
@@ -114,12 +120,6 @@
     {{ with .Site.Social.stackoverflow }}
     <li class="pure-menu-item">
       <a class="pure-menu-link" href="https://stackoverflow.com/users/{{ . }}" target="_blank"><i class="fa fa-stack-overflow fa-fw"></i>Stack Overflow</a>
-    </li>
-    {{ end }}
-
-    {{ with .Site.Social.hackernews }}
-    <li class="pure-menu-item">
-      <a class="pure-menu-link" href="https://news.ycombinator.com/user?id={{ . }}" target="_blank"><i class="fa fa-hacker-news fa-fw"></i>Hacker News</a>
     </li>
     {{ end }}
 

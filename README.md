@@ -20,6 +20,7 @@ Blackburn is a clear and responsive theme for [Hugo](//gohugo.io).
   * LinkedIn
   * Xing
   * Reddit
+  * Hacker News
   * GitHub
   * Bitbucket
   * Stack Overflow

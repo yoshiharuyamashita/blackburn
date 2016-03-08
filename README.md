@@ -164,9 +164,11 @@ paginate = 10
 
 ```
 {{% fluid_img class="pure-u-1-2" src="/path/to/img" alt="img description" %}}
+{{% fluid_img class="pure-u-1-3" src="/path/to/img" caption="img description" %}}
 ```
 
-See [Pure CSS Grids](http://purecss.io/grids/) for possible class values.
+* `class`, `alt` and `caption` are optional.
+* See [Pure CSS Grids](http://purecss.io/grids/) for possible `class` values.
 
 ## License
 

@@ -1,11 +1,17 @@
 {{ if or (.Paginator.HasPrev) (.Paginator.HasNext) }}
+{{ $prev := "fa fa-chevron-left"}}
+{{ $next := "fa fa-chevron-right"}}
 <nav class="pagination" role="pagination">
   {{ if .Paginator.HasPrev }}
-  <a href="{{ .Paginator.Prev.URL }}"><i class="fa fa-angle-double-left"></i></a>
+  <a href="{{ .Paginator.Prev.URL }}"><i class="{{ $prev }}"></i></a>
+  {{ else }}
+  <i class="{{ $prev }}"></i>
   {{ end }}
-  <span>{{ .Paginator.PageNumber }} / {{ .Paginator.TotalPages }}</span>
+  <span>&nbsp;{{ .Paginator.PageNumber }} / {{ .Paginator.TotalPages }}&nbsp;</span>
   {{ if .Paginator.HasNext }}
-  <a href="{{ .Paginator.Next.URL }}"><i class="fa fa-angle-double-right"></i></a>
+  <a href="{{ .Paginator.Next.URL }}"><i class="{{ $next }}"></i></a>
+  {{ else }}
+  <i class="{{ $next }}"></i>
   {{ end }}
 </nav>
 {{ end }}

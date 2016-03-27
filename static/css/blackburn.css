@@ -69,4 +69,9 @@ i {
 
 .pagination {
   text-align: center;
+  margin-top: 3em;
+}
+
+.pagination a {
+  color: #265778;
 }

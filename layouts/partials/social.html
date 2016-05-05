@@ -1,9 +1,11 @@
 <div class="pure-menu social">
   <ul class="pure-menu-list">
 
+    {{ if .RSSlink }}
     <li class="pure-menu-item">
-      <a class="pure-menu-link" href="{{ .Site.BaseURL }}index.xml"><i class="fa fa-rss fa-fw"></i>RSS</a>
+      <a class="pure-menu-link" href="{{ .RSSlink }}"><i class="fa fa-rss fa-fw"></i>RSS</a>
     </li>
+    {{ end }}
 
     <!-- SNS microblogging -->
 

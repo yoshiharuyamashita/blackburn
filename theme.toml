@@ -9,7 +9,7 @@ min_version = 0.15
 
 [author]
   name = "Yoshiharu Yamashita"
-  homepage = "https://github.com/yoshiharuyamashita"
+  homepage = "http://yoshiharuyamashita.com"
 
 # If porting an existing theme
 [original]

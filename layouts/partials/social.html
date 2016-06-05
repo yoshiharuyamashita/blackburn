@@ -15,6 +15,12 @@
     </li>
     {{ end }}
 
+    {{ with .Site.Social.GNUSocial }}
+    <li class="pure-menu-item">
+      <a class="pure-menu-link" href="https://quitter.se/{{ . }}" target="_blank"><i class="fa fa-gnusocial-square fa-fw"></i>Twitter</a>
+    </li>
+    {{ end }}
+
     {{ with .Site.Social.facebook }}
     <li class="pure-menu-item">
       <a class="pure-menu-link" href="https://facebook.com/{{ . }}" target="_blank"><i class="fa fa-facebook-square fa-fw"></i>Facebook</a>

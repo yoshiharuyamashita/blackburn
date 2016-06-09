@@ -24,6 +24,7 @@ Blackburn is a clear and responsive theme for [Hugo](//gohugo.io).
   * GitHub
   * Bitbucket
   * Stack Overflow
+  * Keybase
 * Client-side syntax highlighting by [Highlight.js](//highlightjs.org) (v9.1.0)
 * Web analytics by Google Analytics
 * Comments by Disqus
@@ -136,6 +137,9 @@ paginate = 10
   github = "yoshiharuyamashita"
   bitbucket = "*"
   stackoverflow = "*"
+
+  # Other
+  keybase = "*"
 ```
 
 ## Usage

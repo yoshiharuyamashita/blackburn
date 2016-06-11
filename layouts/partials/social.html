@@ -15,6 +15,12 @@
     </li>
     {{ end }}
 
+    {{ with .Site.Social.gnusocial }}
+    <li class="pure-menu-item">
+      <a class="pure-menu-link" href="{{ . }}" target="_blank"><i class="fa fa-comment fa-fw"></i>GNU social</a>
+    </li>
+    {{ end }}
+
     {{ with .Site.Social.facebook }}
     <li class="pure-menu-item">
       <a class="pure-menu-link" href="https://facebook.com/{{ . }}" target="_blank"><i class="fa fa-facebook-square fa-fw"></i>Facebook</a>

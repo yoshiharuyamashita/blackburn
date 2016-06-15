@@ -81,6 +81,10 @@ paginate = 10
   highlightjs = "androidstudio"
   dateFormat = "02 Jan 2006, 15:04"
 
+  [params.piwikAnalytics]
+    siteID = 2
+    piwikRoot = "//analytics.example.com/"
+
 [menu]
   # Shown in the side menu.
   [[menu.main]]

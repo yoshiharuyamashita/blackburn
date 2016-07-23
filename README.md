@@ -26,6 +26,7 @@ Blackburn is a clear and responsive theme for [Hugo](//gohugo.io).
   * Bitbucket
   * Stack Overflow
   * Server Fault
+  * Last.fm
   * Keybase
 * Client-side syntax highlighting by [Highlight.js](//highlightjs.org) (v9.1.0)
 * Web analytics by Google Analytics
@@ -141,6 +142,9 @@ paginate = 10
   bitbucket = "*"
   stackoverflow = "*"
   serverfault = "*"
+
+  # Music
+  lastfm = "*"
 
   # Other
   keybase = "*"

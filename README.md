@@ -142,7 +142,10 @@ paginate = 10
   bitbucket = "*"
   stackoverflow = "*"
   serverfault = "*"
-
+  
+  # Gaming
+  steam = "*"
+  
   # Music
   lastfm = "*"
 

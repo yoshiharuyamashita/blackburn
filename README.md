@@ -144,6 +144,9 @@ paginate = 10
   stackoverflow = "*"
   serverfault = "*"
 
+  # Gaming
+  steam = "*"
+  
   # Music
   lastfm = "*"
 

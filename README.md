@@ -26,6 +26,7 @@ Blackburn is a clear and responsive theme for [Hugo](//gohugo.io).
   * Bitbucket
   * Stack Overflow
   * Server Fault
+  * Steam
   * Last.fm
   * Keybase
 * Client-side syntax highlighting by [Highlight.js](//highlightjs.org) (v9.1.0)

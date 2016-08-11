@@ -137,6 +137,14 @@
     </li>
     {{ end }}
 
+    <!-- Gaming -->
+    
+    {{ with .Site.Social.steam }}
+    <li class="pure-menu-item">
+      <a class="pure-menu-link" href="https://steamcommunity.com/id/{{ . }}" target="_blank"><i class="fa fa-steam-square fa-fw"></i>Steam</a>
+    </li>
+    {{ end }}
+    
     <!-- Music -->
 
     {{ with .Site.Social.lastfm }}

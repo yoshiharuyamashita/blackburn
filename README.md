@@ -62,9 +62,11 @@ See [Hugo Quickstart Guide](//gohugo.io/overview/quickstart/) for more informati
 Example config.toml:
 
 ```toml
-baseurl = "http://replace-this-with-your-hugo-site.com/"
-title = "Your site title"
-author = "Your name"
+baseurl = "http://example.com/"
+languageCode = "en-us"
+title = "Blackburn Theme Demo"
+theme = "blackburn"
+author = "Yoshiharu Yamashita"
 # Shown in the side menu
 copyright = "&copy; 2016. All rights reserved."
 canonifyurls = true
@@ -111,47 +113,47 @@ paginate = 10
     url = "/contact/"
 
 [social]
-  # Link your social networking accouns to the side menu
+  # Link your social networking accounts to the side menu
   # by entering your username or ID.
 
   # SNS microblogging
   twitter = "*"
-  gnusocial = "*" # Specify href (e.g. https://quitter.se/yourusername)
+  # gnusocial = "*" # Specify href (e.g. https://quitter.se/yourusername)
   facebook = "*"
-  googleplus = "*"
-  weibo = "*"
+  # googleplus = "*"
+  # weibo = "*"
 
   # SNS photo/video sharing
   instagram = "*"
-  flickr = "*"
-  pinterest = "*"
-  youtube = "*"
-  vimeo = "*"
-  vine = "*"
-  slideshare = "*"
+  # flickr = "*"
+  # pinterest = "*"
+  # youtube = "*"
+  # vimeo = "*"
+  # vine = "*"
+  # slideshare = "*"
 
   # SNS career oriented
-  linkedin = "*"
-  xing = "*"
+  # linkedin = "*"
+  # xing = "*"
 
   # SNS news
-  reddit = "*"
-  hackernews = "*"
+  # reddit = "*"
+  # hackernews = "*"
 
   # Techie
   github = "yoshiharuyamashita"
-  bitbucket = "*"
-  stackoverflow = "*"
-  serverfault = "*"
+  # bitbucket = "*"
+  # stackoverflow = "*"
+  # serverfault = "*"
 
   # Gaming
-  steam = "*"
-  
+  # steam = "*"
+
   # Music
-  lastfm = "*"
+  # lastfm = "*"
 
   # Other
-  keybase = "*"
+  # keybase = "*"
 ```
 
 ## Usage

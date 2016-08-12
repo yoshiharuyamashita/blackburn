@@ -1,8 +1,9 @@
-baseurl = "http://replace-this-with-your-hugo-site.com/"
+baseurl = "http://example.com/"
 languageCode = "en-us"
 title = "Blackburn Theme Demo"
 theme = "blackburn"
 author = "Yoshiharu Yamashita"
+# Shown in the side menu
 copyright = "&copy; 2016. All rights reserved."
 canonifyurls = true
 paginate = 10
@@ -48,11 +49,44 @@ paginate = 10
     url = "/contact/"
 
 [social]
-  # Link your social networking accouns to the side menu
+  # Link your social networking accounts to the side menu
   # by entering your username or ID.
+
+  # SNS microblogging
   twitter = "*"
+  # gnusocial = "*" # Specify href (e.g. https://quitter.se/yourusername)
   facebook = "*"
+  # googleplus = "*"
+  # weibo = "*"
+
+  # SNS photo/video sharing
   instagram = "*"
+  # flickr = "*"
+  # pinterest = "*"
+  # youtube = "*"
+  # vimeo = "*"
+  # vine = "*"
+  # slideshare = "*"
+
+  # SNS career oriented
+  # linkedin = "*"
+  # xing = "*"
+
+  # SNS news
+  # reddit = "*"
+  # hackernews = "*"
+
+  # Techie
   github = "yoshiharuyamashita"
-  stackoverflow = "*"
-  linkedin = "*"
+  # bitbucket = "*"
+  # stackoverflow = "*"
+  # serverfault = "*"
+
+  # Gaming
+  # steam = "*"
+
+  # Music
+  # lastfm = "*"
+
+  # Other
+  # keybase = "*"

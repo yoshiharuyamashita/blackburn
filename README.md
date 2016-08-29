@@ -146,7 +146,7 @@ paginate = 10
 
   # Gaming
   steam = "*"
-  
+
   # Music
   lastfm = "*"
 

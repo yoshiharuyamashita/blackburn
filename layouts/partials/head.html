@@ -45,4 +45,11 @@
 
   {{ partial "favicon.html" . }}
 
+  {{ range .Site.Params.custom_css }}
+    <link rel="stylesheet" href="{{ $.Site.BaseURL }}{{ . }}">
+  {{ end }}
+  {{ range .Site.Params.custom_js }}
+    <script src="{{ $.Site.BaseURL }}{{ . }}"></script>
+  {{ end }}
+
 </head>

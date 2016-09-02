@@ -83,6 +83,8 @@ paginate = 10
   # CSS name for highlight.js
   highlightjs = "androidstudio"
   dateFormat = "02 Jan 2006, 15:04"
+  custom_css = ["css/my.css"]
+  custom_js = ["js/my.js"]
 
 [menu]
   # Shown in the side menu.

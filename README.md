@@ -113,7 +113,7 @@ paginate = 10
     url = "/contact/"
 
 [social]
-  # Link your social networking accouns to the side menu
+  # Link your social networking accounts to the side menu
   # by entering your username or ID.
 
   # SNS microblogging

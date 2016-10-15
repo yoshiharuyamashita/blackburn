@@ -38,6 +38,12 @@
       <a class="pure-menu-link" href="http://weibo.com/{{ . }}" target="_blank"><i class="fa fa-weibo fa-fw"></i>Weibo</a>
     </li>
     {{ end }}
+	
+	{{ with .Site.Social.tumblr }}
+    <li class="pure-menu-item">
+      <a class="pure-menu-link" href="https://{{ . }}.tumblr.com/" target="_blank"><i class="fa fa-tumblr-square fa-fw"></i>Tumblr</a>
+    </li>
+    {{ end }}
 
     <!-- SNS photo/video sharing -->
 

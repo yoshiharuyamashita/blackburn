@@ -159,6 +159,12 @@
     </li>
     {{ end }}
 
+    {{ with .Site.Social.discogs }}
+    <li class="pure-menu-item">
+      <a class="pure-menu-link" href="https://www.discogs.com/user/{{ . }}" target="_blank"><i class="fa fa-music fa-fw"></i>Discogs</a>
+    </li>
+    {{ end }}
+
     <!-- Other -->
 
     {{ with .Site.Social.keybase }}

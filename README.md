@@ -11,6 +11,7 @@ Blackburn is a clear and responsive theme for [Hugo](//gohugo.io).
   * Facebook
   * Google+
   * Weibo
+  * Tumblr
   * Instagram
   * Flickr
   * Pinterest
@@ -124,6 +125,7 @@ paginate = 10
   facebook = "*"
   googleplus = "*"
   weibo = "*"
+  tumblr = "*"
 
   # SNS photo/video sharing
   instagram = "*"

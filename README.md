@@ -64,7 +64,7 @@ See [Hugo Quickstart Guide](//gohugo.io/overview/quickstart/) for more informati
 Example config.toml:
 
 ```toml
-baseurl = "http://replace-this-with-your-hugo-site.com/"
+baseurl = "https://www.example.com/"
 title = "Your site title"
 author = "Your name"
 # Shown in the side menu

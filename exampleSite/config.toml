@@ -1,4 +1,4 @@
-baseurl = "http://replace-this-with-your-hugo-site.com/"
+baseurl = "https://www.example.com/"
 languageCode = "en-us"
 title = "Blackburn Theme Demo"
 theme = "blackburn"

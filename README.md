@@ -43,7 +43,7 @@ Blackburn is a clear and responsive theme for [Hugo](//gohugo.io).
 
 ## Screenshots
 
-![screenshot](/images/screenshot.png)
+![screenshot](https://raw.githubusercontent.com/yoshiharuyamashita/blackburn/master/images/screenshot.png)
 
 ## Installation
 

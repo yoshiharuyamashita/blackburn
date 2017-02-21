@@ -17,7 +17,6 @@ Blackburn is a clear and responsive theme for [Hugo](//gohugo.io).
   * Pinterest
   * YouTube
   * Vimeo
-  * Vine
   * SlideShare
   * LinkedIn
   * Xing
@@ -135,7 +134,6 @@ paginate = 10
   pinterest = "*"
   youtube = "*"
   vimeo = "*"
-  vine = "*"
   slideshare = "*"
 
   # SNS career oriented

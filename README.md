@@ -90,6 +90,8 @@ paginate = 10
   # (relative to /static folder)
   custom_css = ["css/my.css"]
   custom_js = ["js/my.js"]
+  # full or trancated posts on index
+  truncate = false
 
 [menu]
   # Shown in the side menu.

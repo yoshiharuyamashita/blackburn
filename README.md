@@ -35,7 +35,7 @@ Blackburn is a clear and responsive theme for [Hugo](//gohugo.io).
 * Client-side syntax highlighting by [Highlight.js](//highlightjs.org) (v9.11.0)
 * Web analytics by Google Analytics
 * Comments by Disqus
-* Icons by Font Awesome (v4.5.0)
+* Icons by Font Awesome (v4.7.0)
 
 ## Demo
 

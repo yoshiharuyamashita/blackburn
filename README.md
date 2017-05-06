@@ -24,6 +24,7 @@ Blackburn is a clear and responsive theme for [Hugo](//gohugo.io).
   * Reddit
   * Hacker News
   * GitHub
+  * GitLab
   * Bitbucket
   * Stack Overflow
   * Server Fault
@@ -148,6 +149,7 @@ paginate = 10
 
   # Techie
   github = "yoshiharuyamashita"
+  gitlab = "*"
   bitbucket = "*"
   stackoverflow = "*"
   serverfault = "*"

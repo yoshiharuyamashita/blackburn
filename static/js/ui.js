@@ -2,7 +2,8 @@
 
     var layout   = document.getElementById('layout'),
         menu     = document.getElementById('menu'),
-        menuLink = document.getElementById('menuLink');
+        menuLink = document.getElementById('menuLink'),
+        content  = document.getElementById('main');
 
     function toggleClass(element, className) {
         var classes = element.className.split(/\s+/),
@@ -23,13 +24,23 @@
         element.className = classes.join(' ');
     }
 
-    menuLink.onclick = function (e) {
+    function toggleAll(e) {
         var active = 'active';
 
         e.preventDefault();
         toggleClass(layout, active);
         toggleClass(menu, active);
         toggleClass(menuLink, active);
+    }
+
+    menuLink.onclick = function (e) {
+        toggleAll(e);
+    };
+
+    content.onclick = function(e) {
+        if (menu.className.indexOf('active') !== -1) {
+            toggleAll(e);
+        }
     };
 
 }(this, this.document));

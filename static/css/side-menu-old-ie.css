@@ -27,6 +27,7 @@ This is the parent `<div>` that contains the menu and the content area.
 
 #layout {
     position: relative;
+    left: 0;
     padding-left: 0;
 }
 

@@ -212,6 +212,20 @@ paginate = 10
 * `class`, `alt` and `caption` are optional.
 * See [Pure CSS Grids](http://purecss.io/grids/) for possible `class` values.
 
+## Featured Photo
+
+Photo bloggers can add a featured photo to a post. This featured photo is shown on the summary page of their blog. Additionally, a short text can be given which is displayed beneath the featured photo on the blog's summary page. To use this feature, add variables `featured_image` and `featured_text` to the front matter of you post's markdown:
+
+	+++
+	title = "Title"
+	date = "date"
+	tags = [ "tag1", "tag2" ]
+	topics = [ "topic1" ]
+	type = "post"
+	featured_image = "link_to_pic_3"
+	featured_text = "Hey I get displayed beneath the featured picture!"
+	+++
+
 ## License
 
 * [MIT](//opensource.org/licenses/MIT)

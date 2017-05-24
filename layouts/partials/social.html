@@ -59,6 +59,12 @@
     </li>
     {{ end }}
 
+    {{ with .Site.Social.photo500px }}
+    <li class="pure-menu-item">
+      <a class="pure-menu-link" href="https://500px.com/{{ . }}" target="_blank"><i class="fa fa-500px fa-fw"></i>500px</a>
+    </li>
+    {{ end }}
+
     {{ with .Site.Social.pinterest }}
     <li class="pure-menu-item">
       <a class="pure-menu-link" href="https://pinterest.com/{{ . }}" target="_blank"><i class="fa fa-pinterest-square fa-fw"></i>Pinterest</a>

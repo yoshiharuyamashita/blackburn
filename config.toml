@@ -27,7 +27,6 @@ baseName = "feed"
   # CSS name for highlight.js
   highlightjs = "atom-one-light"
   dateFormat = "2006 Jan 02, 15:04"
-  uglyURLs = true
   # Include any custom CSS and/or JS files
   # (relative to /static folder)
 #   custom_css = ["css/my.css"]

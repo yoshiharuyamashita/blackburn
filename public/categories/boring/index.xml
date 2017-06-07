@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Hugo Blog Template for GitHub Pages</title>
+    <link>http://spencerlyon.com/hugo_gh_blog/categories/boring/index.xml</link>
+    <description>Recent content on Hugo Blog Template for GitHub Pages</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <atom:link href="http://spencerlyon.com/hugo_gh_blog/categories/boring/index.xml" rel="self" type="application/rss+xml" />
+    
+    <item>
+      <title>Second Post</title>
+      <link>http://spencerlyon.com/hugo_gh_blog/posts/middle/</link>
+      <pubDate>Fri, 28 Mar 2014 00:00:00 +0000</pubDate>
+      
+      <guid>http://spencerlyon.com/hugo_gh_blog/posts/middle/</guid>
+      <description>
+
+&lt;h2 id=&#34;sample-post-1&#34;&gt;Sample Post 1&lt;/h2&gt;
+
+&lt;p&gt;Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+proident, sunt in culpa qui officia deserunt mollit anim id est laborum.&lt;/p&gt;
+
+&lt;h3 id=&#34;sub-heading&#34;&gt;Sub-heading&lt;/h3&gt;
+
+&lt;p&gt;Lorem ipsum dolor sit amet, consectetur adipisicing elit. Est, non, ratione, molestiae illo optio quia sequi id fuga natus nihil ad architecto dolor alias ex sunt iste aperiam eius itaque.&lt;/p&gt;
+
+&lt;h2 id=&#34;foo&#34;&gt;foo&lt;/h2&gt;
+
+&lt;p&gt;Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quo, neque, eveniet voluptate eos debitis illum qui nostrum eius maxime ratione assumenda suscipit impedit deserunt voluptatibus odio ducimus non. Ex, ratione.&lt;/p&gt;
+</description>
+    </item>
+    
+  </channel>
+</rss>

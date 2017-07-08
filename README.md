@@ -87,6 +87,7 @@ paginate = 10
   disqus = "Your Disqus shortname"
   # CSS name for highlight.js
   highlightjs = "androidstudio"
+  highlightjs_extra_languages = ["yaml"]
   dateFormat = "02 Jan 2006, 15:04"
   # Include any custom CSS and/or JS files
   # (relative to /static folder)

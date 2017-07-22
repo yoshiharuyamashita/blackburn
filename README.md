@@ -34,7 +34,7 @@ Blackburn is a clear and responsive theme for [Hugo](//gohugo.io).
   * Last.fm
   * Discogs
   * Keybase
-* Client-side syntax highlighting by [Highlight.js](//highlightjs.org) (v9.11.0)
+* Client-side syntax highlighting by [Highlight.js](//highlightjs.org) (v9.12.0)
 * Web analytics by Google Analytics
 * Comments by Disqus
 * Icons by Font Awesome (v4.7.0)
@@ -87,6 +87,7 @@ paginate = 10
   disqus = "Your Disqus shortname"
   # CSS name for highlight.js
   highlightjs = "androidstudio"
+  highlightjs_extra_languages = ["yaml"]
   dateFormat = "02 Jan 2006, 15:04"
   # Include any custom CSS and/or JS files
   # (relative to /static folder)

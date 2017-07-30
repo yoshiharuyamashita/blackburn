@@ -199,13 +199,33 @@ paginate = 10
 
 ## Shortcodes
 
-### Positional
+### fluid_imgs
+
+```
+{{< fluid_imgs
+  "class|src|alt"
+  "class|src|alt"
+  "... and so on"
+>}}
+```
+
+where each positional parameter is separated by the vertical bar (i.e., |).
+
+- `class`: specifies a Pure CSS unit class name (**required**)
+- `src`: specifies the URL of an image (**required**)
+- `alt`: specifies an alternate text for an image (optional)
+
+See [here](http://yoshiharuyamashita.com/post/hugo-shortcode-to-show-multiple-images/) for examples.
+
+### fluid_img (obsolete)
+
+#### Positional
 
 ```
 {{% fluid_img "/path/to/img" %}}
 ```
 
-### Named
+#### Named
 
 ```
 {{% fluid_img class="pure-u-1-2" src="/path/to/img" alt="img description" %}}

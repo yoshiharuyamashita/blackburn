@@ -1,0 +1,21 @@
+{{ $paramCount := len .Params }}
+{{ if gt $paramCount 0 }}
+<div class="pure-g">
+{{ range $param := .Params }}
+  {{ $items := split $param "|" }}
+  {{ $itemCount := len $items }}
+  <!-- Item count must be at least 2 as
+  "class" and "src" must be specified -->
+  {{ if ge $itemCount 2 }}
+  <div class="{{ index $items 0 }}">
+    <div style="padding: 0 .2em">
+      <img
+        class="pure-img-responsive"
+        src="{{ index $items 1 }}"
+        alt="{{ if ge $itemCount 3 }}{{ index $items 2 }}{{ else }}{{ "" }}{{ end }}">
+    </div>
+  </div>
+  {{ end }}
+{{ end }}
+</div>
+{{ end }}

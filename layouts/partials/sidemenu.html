@@ -22,7 +22,7 @@
           </ul>
       {{else}}
         <li class="pure-menu-item">
-          <a class="pure-menu-link" href="{{ .URL }}">{{ .Pre }}{{ .Name }}</a>
+          <a class="pure-menu-link" {{ printf "href=%q" .URL | safeHTMLAttr }}>{{ .Pre }}{{ .Name }}</a>
       {{end}}
         </li>
       {{end}}

@@ -7,13 +7,13 @@
 
   {{ $baseUrl := .Site.BaseURL }}
 
-  {{ if isset .Params "topics" }}
-  {{ $count := len .Params.topics }}
+  {{ if isset .Params "categories" }}
+  {{ $count := len .Params.categories }}
   {{ if gt $count 0 }}
   <div>
     <i class="fa fa-folder fa-fw"></i>
-    {{ range $k, $v := .Params.topics }}
-      <a class="post-taxonomy-topic" href="{{ $baseUrl }}topics/{{ . | urlize }}">{{ . }}</a>{{ if lt $k (sub $count 1) }}&nbsp;&#47;{{ end }}
+    {{ range $k, $v := .Params.categories }}
+      <a class="post-taxonomy-category" href="{{ $baseUrl }}categories/{{ . | urlize }}">{{ . }}</a>{{ if lt $k (sub $count 1) }}&nbsp;&#47;{{ end }}
     {{ end }}
   </div>
   {{ end }}

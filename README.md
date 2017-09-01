@@ -75,10 +75,6 @@ copyright = "&copy; 2016. All rights reserved."
 canonifyurls = true
 paginate = 10
 
-[indexes]
-  tag = "tags"
-  topic = "topics"
-
 [params]
   # Shown in the home page
   subtitle = "A Hugo Theme"

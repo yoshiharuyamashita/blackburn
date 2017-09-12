@@ -18,13 +18,13 @@
   {{ "<!--<![endif]-->" | safeHTML }}
 
   {{ "<!--[if lte IE 8]>" | safeHTML }}
-  <link rel="stylesheet" href="/css/side-menu-old-ie.css">
+  <link rel="stylesheet" href="{{ .Site.BaseURL }}css/side-menu-old-ie.css">
   {{ "<![endif]-->" | safeHTML }}
   {{ "<!--[if gt IE 8]><!-->" | safeHTML }}
-  <link rel="stylesheet" href="/css/side-menu.css">
+  <link rel="stylesheet" href="{{ .Site.BaseURL }}css/side-menu.css">
   {{ "<!--<![endif]-->" | safeHTML }}
 
-  <link rel="stylesheet" href="/css/blackburn.css">
+  <link rel="stylesheet" href="{{ .Site.BaseURL }}css/blackburn.css">
 
   <!-- Icons -->
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">

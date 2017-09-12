@@ -46,6 +46,8 @@ The content `<div>` is where all your content goes.
     margin-bottom: 50px;
     line-height: 1.6em;
 }
+.content img {max-width: 100%}
+
 
 .header {
      margin: 0;
@@ -87,7 +89,7 @@ appears on the left side of the page.
     left: 0;
     bottom: 0;
     z-index: 1000; /* so the menu or its navicon stays above all content */
-    background: #191818;
+    background: #162625;
     overflow-y: auto;
     -webkit-overflow-scrolling: touch;
 }
@@ -114,14 +116,14 @@ appears on the left side of the page.
     */
     #menu .pure-menu ul,
     #menu .pure-menu .menu-item-divided {
-        border-top: 1px solid #333;
+        border-top: 1px solid #2E453F;
     }
         /*
         Change color of the anchor links on hover/focus.
         */
         #menu .pure-menu li a:hover,
         #menu .pure-menu li a:focus {
-            background: #333;
+            background: #2E453F;
         }
 
     /*

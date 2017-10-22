@@ -5,8 +5,9 @@
 </a>
 <div id="menu">
 
+  {{ partial "avatar.html" . }}
   {{ partial "brand.html" . }}
-
+  
   <div class="pure-menu">
     <ul class="pure-menu-list">
       {{ range .Site.Menus.main }}

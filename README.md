@@ -94,6 +94,10 @@ paginate = 10
   custom_css = ["css/my.css"]
   custom_js = ["js/my.js"]
 
+  [params.piwikAnalytics]
+    siteID = 2
+    piwikRoot = "//analytics.example.com/"
+
 [menu]
   # Shown in the side menu.
   [[menu.main]]

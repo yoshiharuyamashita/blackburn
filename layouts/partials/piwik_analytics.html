@@ -1,0 +1,16 @@
+{{ with .Site.Params.piwikAnalytics }}
+<!-- Piwik -->
+<script type="text/javascript">
+  var _paq = _paq || [];
+  _paq.push(['trackPageView']);
+  _paq.push(['enableLinkTracking']);
+  (function() {
+    var u="{{ .piwikRoot }}";
+    _paq.push(['setTrackerUrl', u+'piwik.php']);
+    _paq.push(['setSiteId', {{ .siteID }}]);
+    var d=document, g=d.createElement('script'), s=d.getElementsByTagName('script')[0];
+    g.type='text/javascript'; g.async=true; g.defer=true; g.src=u+'piwik.js'; s.parentNode.insertBefore(g,s);
+  })();
+</script>
+<noscript><p><img src="{{ .piwikRoot}}piwik.php?idsite={{ .siteID }}" style="border:0;" alt="" /></p></noscript>
+{{ end }}

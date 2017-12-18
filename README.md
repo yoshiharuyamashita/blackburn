@@ -203,6 +203,19 @@ paginate = 10
 
 ## Shortcodes
 
+### pure_table
+```
+{{< pure_table
+  "columnName1|columnName2|...|columnName99"
+  "dataValue1|dataValue2|...|dataValue99"
+  "dataValue1|dataValue2|...|dataValue99"
+  "dataValue1|dataValue2|...|dataValue99"
+  "... and so on"
+>}}
+```
+
+where each positional parameter is separated by the vertical bar (i.e., |). The resulting `<table>` is set to have `class="pure-table pure-table-striped"`.
+
 ### fluid_imgs
 
 ```

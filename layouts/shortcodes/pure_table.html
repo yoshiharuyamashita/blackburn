@@ -1,0 +1,20 @@
+{{ $fields := (index .Params 0) }}
+{{ $data := after 1 .Params }}
+
+<table class="pure-table pure-table-striped">
+  <thead><tr>
+    {{ range split $fields "|"}}
+      <th>{{ . }}</th>
+    {{ end }}
+  </thead></tr>
+  <tbody>
+  {{ range $data}}
+    <tr>
+      {{ $items := split . "|" }}
+      {{ range $items }}
+        <td>{{ . }}</td>
+      {{ end }}
+    </tr>
+  {{ end }}
+  </tbody>
+</table>

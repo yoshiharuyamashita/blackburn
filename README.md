@@ -187,18 +187,18 @@ paginate = 10
   url = "/about/"
 ```
 
-* Override the theme by linking to custom CSS files:
+* Override the theme by linking to custom CSS files or URLs:
 
 ```toml
 [params]
   custom_css = ["css/my.css"]
 ```
 
-* Add new behaviours by linking to custom JS files:
+* Add new behaviours by linking to custom JS files or URLs:
 
 ```toml
 [params]
-  custom_js = ["js/my.js"]
+  custom_js = ["js/my.js", "https://cdnjs.cloudflare.com/ajax/libs/zooming/1.4.2/zooming.min.js"]
 ```
 
 ## Shortcodes

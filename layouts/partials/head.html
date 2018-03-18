@@ -52,10 +52,18 @@
   {{ partial "favicon.html" . }}
 
   {{ range .Site.Params.custom_css }}
-    <link rel="stylesheet" href="{{ $.Site.BaseURL }}{{ . }}">
+    {{ if findRE "https?://" . }}
+        <link rel="stylesheet" href="{{ . }}">
+    {{ else }}
+        <link rel="stylesheet" href="{{ $.Site.BaseURL }}{{ . }}">
+    {{ end }}
   {{ end }}
   {{ range .Site.Params.custom_js }}
-    <script src="{{ $.Site.BaseURL }}{{ . }}"></script>
+    {{ if findRE "https?://" . }}
+        <script src="{{ . }}"></script>
+    {{ else }}
+        <script src="{{ $.Site.BaseURL }}{{ . }}"></script>
+    {{ end }}
   {{ end }}
 
 </head>

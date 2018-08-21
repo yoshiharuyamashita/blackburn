@@ -6,12 +6,11 @@
 </div>
 
 <div class="content">
-
-  {{ range .Data.Pages }}
-    {{ if in .Params.tags "_home" }}
-      {{ .Content }}
-    {{ end }}
+  {{ range ( .Paginate (where .Data.Pages "Type" "post")).Pages }}
+    {{ .Render "summary"}}
   {{ end }}
+
+  {{ partial "pagination.html" . }}
 
 </div>
 

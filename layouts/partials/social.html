@@ -14,12 +14,19 @@
       <a class="pure-menu-link" href="https://twitter.com/{{ . }}" target="_blank"><i class="fab fa-twitter fa-fw"></i>Twitter</a>
     </li>
     {{ end }}
-
+    
     {{ with .Site.Social.gnusocial }}
     <li class="pure-menu-item">
       <a class="pure-menu-link" href="{{ . }}" target="_blank"><i class="fa fa-comment fa-fw"></i>GNU social</a>
     </li>
     {{ end }}
+    
+    {{ with .Site.Social.mastodon }}
+    <li class="pure-menu-item">
+      <a class="pure-menu-link" href="{{ . }}" target="_blank"><i class="fab fa-mastodon fa-fw"></i>Mastodon</a>
+    </li>
+    {{ end }}
+
 
     {{ with .Site.Social.facebook }}
     <li class="pure-menu-item">

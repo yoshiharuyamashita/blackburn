@@ -47,6 +47,14 @@ article > footer {
   overflow: hidden;
 }
 
+#menu {
+  overflow-y: visible;
+}
+
+#menu a {
+  padding: 0.6em;
+}
+
 #menu .brand {
   font-family: Raleway;
   font-weight: bold;
@@ -60,6 +68,10 @@ article > footer {
 
 #menu .pure-menu {
   font-size: 0.9em;
+}
+
+#menu .pure-menu ul.pure-menu-children {
+  border-top: none;
 }
 
 i {

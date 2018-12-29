@@ -8,6 +8,7 @@ Blackburn is a clear and responsive theme for [Hugo](//gohugo.io).
 * Fixed sidebar with social links:
   * Twitter
   * GNU social
+  * Mastodon
   * Facebook
   * Google+
   * Weibo
@@ -131,6 +132,7 @@ paginate = 10
   # SNS microblogging
   twitter = "*"
   gnusocial = "*" # Specify href (e.g. https://quitter.se/yourusername)
+  mastodon = "*" # Specify href (e.g. https://mastodon.social/@username)
   facebook = "*"
   googleplus = "*"
   weibo = "*"

@@ -22,6 +22,12 @@
     </li>
     {{ end }}
 
+    {{ with .Site.Social.mastodon }}
+    <li class="pure-menu-item">
+      <a class="pure-menu-link" href="{{ . }}" target="_blank"><i class="fab fa-mastodon fa-fw"></i>Mastodon</a>
+    </li>
+    {{ end }}
+
     {{ with .Site.Social.facebook }}
     <li class="pure-menu-item">
       <a class="pure-menu-link" href="https://facebook.com/{{ . }}" rel="me" target="_blank"><i class="fab fa-facebook-square fa-fw"></i>Facebook</a>

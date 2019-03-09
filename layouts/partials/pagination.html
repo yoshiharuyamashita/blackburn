@@ -1,6 +1,6 @@
 {{ if or (.Paginator.HasPrev) (.Paginator.HasNext) }}
-{{ $prev := "fa fa-chevron-left"}}
-{{ $next := "fa fa-chevron-right"}}
+{{ $prev := "fas fa-chevron-left"}}
+{{ $next := "fas fa-chevron-right"}}
 <nav class="pagination" role="pagination">
   {{ if .Paginator.HasPrev }}
   <a href="{{ .Paginator.Prev.URL }}"><i class="{{ $prev }}"></i></a>

@@ -38,7 +38,7 @@ Blackburn is a clear and responsive theme for [Hugo](//gohugo.io).
 * Client-side syntax highlighting by [Highlight.js](//highlightjs.org) (v9.12.0)
 * Web analytics by Google Analytics
 * Comments by Disqus
-* Icons by Font Awesome (v4.7.0)
+* Icons by Font Awesome (v5.6.3)
 
 ## Demo
 
@@ -103,25 +103,25 @@ paginate = 10
   # Shown in the side menu.
   [[menu.main]]
     name = "Home"
-    pre = "<i class='fa fa-home fa-fw'></i>"
+    pre = "<i class='fas fa-home fa-fw'></i>"
     weight = 1
     identifier = "home"
     url = "/"
   [[menu.main]]
     name = "Posts"
-    pre = "<i class='fa fa-list fa-fw'></i>"
+    pre = "<i class='fas fa-list fa-fw'></i>"
     weight = 2
     identifier = "post"
     url = "/post/"
   [[menu.main]]
     name = "About"
-    pre = "<i class='fa fa-user fa-fw'></i>"
+    pre = "<i class='fas fa-user fa-fw'></i>"
     weight = 3
     identifier = "about"
     url = "/about/"
   [[menu.main]]
     name = "Contact"
-    pre = "<i class='fa fa-phone fa-fw'></i>"
+    pre = "<i class='fas fa-phone fa-fw'></i>"
     weight = 4
     url = "/contact/"
 
@@ -183,7 +183,7 @@ paginate = 10
 ```toml
 [[menu.main]]
   name = "About"
-  pre = "<i class='fa fa-user fa-fw'></i>"
+  pre = "<i class='fas fa-user fa-fw'></i>"
   weight = 2
   identifier = "about"
   url = "/about/"

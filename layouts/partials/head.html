@@ -36,8 +36,9 @@
   <script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
 
  <!-- RSS -->
-  {{ if .RSSLink }}
-  <link rel="alternate" type="application/rss+xml" title="{{ .Site.Title }}" href="{{ .RSSLink }}" />
+  {{ if .OutputFormats.Get "RSS" }}
+  <link rel="alternate" type="application/rss+xml" title="{{ .Site.Title }}"
+    href='{{ with .OutputFormats.Get "RSS" }}{{ .RelPermalink }}{{ end }}' />
   {{ end }}
 
   {{ with .Site.Params.highlightjs }}

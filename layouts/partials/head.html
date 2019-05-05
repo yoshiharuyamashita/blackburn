@@ -2,7 +2,7 @@
   <meta http-equiv="content-type" content="text/html; charset=utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta name="description" content="{{ if .IsNode }}{{ with .Site.Params.description }}{{ . }}{{ end }}{{ else }}{{ with .Description }}{{ . }}{{ end }}{{ end }}">
-  {{.Hugo.Generator}}
+  {{hugo.Generator}}
 
   <title>{{ if .IsHome }}{{ .Title }}{{ else }}{{ .Title }} &middot; {{ .Site.Title }}{{ end }}</title>
 
@@ -36,8 +36,9 @@
   <script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
 
  <!-- RSS -->
-  {{ if .RSSLink }}
-  <link rel="alternate" type="application/rss+xml" title="{{ .Site.Title }}" href="{{ .RSSLink }}" />
+  {{ if .OutputFormats.Get "RSS" }}
+  <link rel="alternate" type="application/rss+xml" title="{{ .Site.Title }}"
+    href='{{ with .OutputFormats.Get "RSS" }}{{ .RelPermalink }}{{ end }}' />
   {{ end }}
 
   {{ with .Site.Params.highlightjs }}

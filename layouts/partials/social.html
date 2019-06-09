@@ -4,7 +4,7 @@
     {{ if .OutputFormats.Get "RSS" }}
     <li class="pure-menu-item">
       <a class="pure-menu-link" href='{{ with .OutputFormats.Get "RSS" }}{{ .RelPermalink }}{{ end }}'><i
-          class="fa fa-rss fa-fw"></i>RSS</a>
+          class="fas fa-rss"></i>RSS</a>
     </li>
     {{ end }}
 
@@ -12,37 +12,37 @@
 
     {{ with .Site.Social.twitter }}
     <li class="pure-menu-item">
-      <a class="pure-menu-link" href="https://twitter.com/{{ . }}" rel="me" target="_blank"><i class="fa fa-twitter-square fa-fw"></i>Twitter</a>
+      <a class="pure-menu-link" href="https://twitter.com/{{ . }}" rel="me" target="_blank"><i class="fab fa-twitter-square fa-fw"></i>Twitter</a>
     </li>
     {{ end }}
 
     {{ with .Site.Social.gnusocial }}
     <li class="pure-menu-item">
-      <a class="pure-menu-link" href="{{ . }}" rel="me" target="_blank"><i class="fa fa-comment fa-fw"></i>GNU social</a>
+      <a class="pure-menu-link" href="{{ . }}" rel="me" target="_blank"><i class="fas fa-comment"></i>GNU social</a>
     </li>
     {{ end }}
 
     {{ with .Site.Social.facebook }}
     <li class="pure-menu-item">
-      <a class="pure-menu-link" href="https://facebook.com/{{ . }}" rel="me" target="_blank"><i class="fa fa-facebook-square fa-fw"></i>Facebook</a>
+      <a class="pure-menu-link" href="https://facebook.com/{{ . }}" rel="me" target="_blank"><i class="fab fa-facebook-square fa-fw"></i>Facebook</a>
     </li>
     {{ end }}
 
     {{ with .Site.Social.googleplus }}
     <li class="pure-menu-item">
-      <a class="pure-menu-link" href="https://plus.google.com/+{{ . }}" rel="me" target="_blank"><i class="fa fa-google-plus-square fa-fw"></i>Google+</a>
+      <a class="pure-menu-link" href="https://plus.google.com/+{{ . }}" rel="me" target="_blank"><i class="fab fa-google-plus-square fa-fw"></i>Google+</a>
     </li>
     {{ end }}
 
     {{ with .Site.Social.weibo }}
     <li class="pure-menu-item">
-      <a class="pure-menu-link" href="http://weibo.com/{{ . }}" rel="me" target="_blank"><i class="fa fa-weibo fa-fw"></i>Weibo</a>
+      <a class="pure-menu-link" href="http://weibo.com/{{ . }}" rel="me" target="_blank"><i class="fab fa-weibo fa-fw"></i>Weibo</a>
     </li>
     {{ end }}
 
     {{ with .Site.Social.tumblr }}
     <li class="pure-menu-item">
-      <a class="pure-menu-link" href="https://{{ . }}.tumblr.com/" rel="me" target="_blank"><i class="fa fa-tumblr-square fa-fw"></i>Tumblr</a>
+      <a class="pure-menu-link" href="https://{{ . }}.tumblr.com/" rel="me" target="_blank"><i class="fab fa-tumblr-square fa-fw"></i>Tumblr</a>
     </li>
     {{ end }}
 
@@ -50,49 +50,49 @@
 
     {{ with .Site.Social.instagram }}
     <li class="pure-menu-item">
-      <a class="pure-menu-link" href="https://instagram.com/{{ . }}" rel="me" target="_blank"><i class="fa fa-instagram fa-fw"></i>Instagram</a>
+      <a class="pure-menu-link" href="https://instagram.com/{{ . }}" rel="me" target="_blank"><i class="fab fa-instagram fa-fw"></i>Instagram</a>
     </li>
     {{ end }}
 
     {{ with .Site.Social.flickr }}
     <li class="pure-menu-item">
-      <a class="pure-menu-link" href="https://flickr.com/photos/{{ . }}" rel="me" target="_blank"><i class="fa fa-flickr fa-fw"></i>Flickr</a>
+      <a class="pure-menu-link" href="https://flickr.com/photos/{{ . }}" rel="me" target="_blank"><i class="fab fa-flickr fa-fw"></i>Flickr</a>
     </li>
     {{ end }}
 
     {{ with .Site.Social.photo500px }}
     <li class="pure-menu-item">
-      <a class="pure-menu-link" href="https://500px.com/{{ . }}" rel="me" target="_blank"><i class="fa fa-500px fa-fw"></i>500px</a>
+      <a class="pure-menu-link" href="https://500px.com/{{ . }}" rel="me" target="_blank"><i class="fab fa-500px fa-fw"></i>500px</a>
     </li>
     {{ end }}
 
     {{ with .Site.Social.pinterest }}
     <li class="pure-menu-item">
-      <a class="pure-menu-link" href="https://pinterest.com/{{ . }}" rel="me" target="_blank"><i class="fa fa-pinterest-square fa-fw"></i>Pinterest</a>
+      <a class="pure-menu-link" href="https://pinterest.com/{{ . }}" rel="me" target="_blank"><i class="fab fa-pinterest-square fa-fw"></i>Pinterest</a>
     </li>
     {{ end }}
 
     {{ with .Site.Social.youtube }}
     <li class="pure-menu-item">
-      <a class="pure-menu-link" href="https://youtube.com/user/{{ . }}" rel="me" target="_blank"><i class="fa fa-youtube-square fa-fw"></i>YouTube</a>
+      <a class="pure-menu-link" href="https://youtube.com/user/{{ . }}" rel="me" target="_blank"><i class="fab fa-youtube-square fa-fw"></i>YouTube</a>
     </li>
     {{ end }}
 
     {{ with .Site.Social.vimeo }}
     <li class="pure-menu-item">
-      <a class="pure-menu-link" href="https://vimeo.com/{{ . }}" rel="me" target="_blank"><i class="fa fa-vimeo-square fa-fw"></i>Vimeo</a>
+      <a class="pure-menu-link" href="https://vimeo.com/{{ . }}" rel="me" target="_blank"><i class="fab fa-vimeo-square fa-fw"></i>Vimeo</a>
     </li>
     {{ end }}
 
     {{ with .Site.Social.vine }}
     <li class="pure-menu-item">
-      <a class="pure-menu-link" href="https://vine.co/{{ . }}" rel="me" target="_blank"><i class="fa fa-vine fa-fw"></i>Vine</a>
+      <a class="pure-menu-link" href="https://vine.co/{{ . }}" rel="me" target="_blank"><i class="fab fa-vine fa-fw"></i>Vine</a>
     </li>
     {{ end }}
 
     {{ with .Site.Social.slideshare }}
     <li class="pure-menu-item">
-      <a class="pure-menu-link" href="http://slideshare.net/{{ . }}" rel="me" target="_blank"><i class="fa fa-slideshare fa-fw"></i>SlideShare</a>
+      <a class="pure-menu-link" href="http://slideshare.net/{{ . }}" rel="me" target="_blank"><i class="fab fa-slideshare fa-fw"></i>SlideShare</a>
     </li>
     {{ end }}
 
@@ -100,13 +100,13 @@
 
     {{ with .Site.Social.linkedin }}
     <li class="pure-menu-item">
-      <a class="pure-menu-link" href="https://linkedin.com/in/{{ . }}" rel="me" target="_blank"><i class="fa fa-linkedin-square fa-fw"></i>LinkedIn</a>
+      <a class="pure-menu-link" href="https://linkedin.com/in/{{ . }}" rel="me" target="_blank"><i class="fab fa-linkedin"></i></i>LinkedIn</a>
     </li>
     {{ end }}
 
     {{ with .Site.Social.xing }}
     <li class="pure-menu-item">
-      <a class="pure-menu-link" href="https://xing.com/profile/{{ . }}" rel="me" target="_blank"><i class="fa fa-xing-square fa-fw"></i>Xing</a>
+      <a class="pure-menu-link" href="https://xing.com/profile/{{ . }}" rel="me" target="_blank"><i class="fab fa-xing-square fa-fw"></i>Xing</a>
     </li>
     {{ end }}
 
@@ -114,13 +114,13 @@
 
     {{ with .Site.Social.reddit }}
     <li class="pure-menu-item">
-      <a class="pure-menu-link" href="https://reddit.com/user/{{ . }}" rel="me" target="_blank"><i class="fa fa-reddit-square fa-fw"></i>Reddit</a>
+      <a class="pure-menu-link" href="https://reddit.com/user/{{ . }}" rel="me" target="_blank"><i class="fab fa-reddit-square fa-fw"></i>Reddit</a>
     </li>
     {{ end }}
 
     {{ with .Site.Social.hackernews }}
     <li class="pure-menu-item">
-      <a class="pure-menu-link" href="https://news.ycombinator.com/user?id={{ . }}" rel="me" target="_blank"><i class="fa fa-hacker-news fa-fw"></i>Hacker News</a>
+      <a class="pure-menu-link" href="https://news.ycombinator.com/user?id={{ . }}" rel="me" target="_blank"><i class="fab fa-hacker-news fa-fw"></i>Hacker News</a>
     </li>
     {{ end }}
 
@@ -128,31 +128,31 @@
 
     {{ with .Site.Social.github }}
     <li class="pure-menu-item">
-      <a class="pure-menu-link" href="https://github.com/{{ . }}" rel="me" target="_blank"><i class="fa fa-github-square fa-fw"></i>GitHub</a>
+      <a class="pure-menu-link" href="https://github.com/{{ . }}" rel="me" target="_blank"><i class="fab fa-github-square fa-fw"></i>GitHub</a>
     </li>
     {{ end }}
 
     {{ with .Site.Social.gitlab }}
     <li class="pure-menu-item">
-      <a class="pure-menu-link" href="https://gitlab.com/{{ . }}" rel="me" target="_blank"><i class="fa fa-gitlab fa-fw"></i>GitLab</a>
+      <a class="pure-menu-link" href="https://gitlab.com/{{ . }}" rel="me" target="_blank"><i class="fab fa-gitlab fa-fw"></i>GitLab</a>
     </li>
     {{ end }}
 
     {{ with .Site.Social.bitbucket }}
     <li class="pure-menu-item">
-      <a class="pure-menu-link" href="https://bitbucket.org/{{ . }}" rel="me" target="_blank"><i class="fa fa-bitbucket-square fa-fw"></i>Bitbucket</a>
+      <a class="pure-menu-link" href="https://bitbucket.org/{{ . }}" rel="me" target="_blank"><i class="fab fa-bitbucket"></i>Bitbucket</a>
     </li>
     {{ end }}
 
     {{ with .Site.Social.stackoverflow }}
     <li class="pure-menu-item">
-      <a class="pure-menu-link" href="https://stackoverflow.com/users/{{ . }}" rel="me" target="_blank"><i class="fa fa-stack-overflow fa-fw"></i>Stack Overflow</a>
+      <a class="pure-menu-link" href="https://stackoverflow.com/users/{{ . }}" rel="me" target="_blank"><i class="fab fa-stack-overflow fa-fw"></i>Stack Overflow</a>
     </li>
     {{ end }}
 
     {{ with .Site.Social.serverfault }}
     <li class="pure-menu-item">
-      <a class="pure-menu-link" href="https://serverfault.com/users/{{ . }}" rel="me" target="_blank"><i class="fa fa-server fa-fw"></i>Server Fault</a>
+      <a class="pure-menu-link" href="https://serverfault.com/users/{{ . }}" rel="me" target="_blank"><i class="fab fa-server fa-fw"></i>Server Fault</a>
     </li>
     {{ end }}
 
@@ -160,13 +160,13 @@
 
     {{ with .Site.Social.steam }}
     <li class="pure-menu-item">
-      <a class="pure-menu-link" href="https://steamcommunity.com/id/{{ . }}" rel="me" target="_blank"><i class="fa fa-steam-square fa-fw"></i>Steam</a>
+      <a class="pure-menu-link" href="https://steamcommunity.com/id/{{ . }}" rel="me" target="_blank"><i class="fab fa-steam-square fa-fw"></i>Steam</a>
     </li>
     {{ end }}
 
     {{ with .Site.Social.mobygames }}
     <li class="pure-menu-item">
-      <a class="pure-menu-link" href="https://www.mobygames.com/developer/sheet/view/developerId,{{ . }}" rel="me" target="_blank"><i class="fa fa-gamepad fa-fw"></i>MobyGames</a>
+      <a class="pure-menu-link" href="https://www.mobygames.com/developer/sheet/view/developerId,{{ . }}" rel="me" target="_blank"><i class="fas fa-gamepad"></i>MobyGames</a>
     </li>
     {{ end }}
 
@@ -174,13 +174,13 @@
 
     {{ with .Site.Social.lastfm }}
     <li class="pure-menu-item">
-      <a class="pure-menu-link" href="http://last.fm/user/{{ . }}" rel="me" target="_blank"><i class="fa fa-lastfm-square fa-fw"></i>Last.fm</a>
+      <a class="pure-menu-link" href="http://last.fm/user/{{ . }}" rel="me" target="_blank"><i class="fab fa-lastfm-square fa-fw"></i>Last.fm</a>
     </li>
     {{ end }}
 
     {{ with .Site.Social.discogs }}
     <li class="pure-menu-item">
-      <a class="pure-menu-link" href="https://www.discogs.com/user/{{ . }}" rel="me" target="_blank"><i class="fa fa-music fa-fw"></i>Discogs</a>
+      <a class="pure-menu-link" href="https://www.discogs.com/user/{{ . }}" rel="me" target="_blank"><i class="fab fa-music fa-fw"></i>Discogs</a>
     </li>
     {{ end }}
 
@@ -188,7 +188,7 @@
 
     {{ with .Site.Social.keybase }}
     <li class="pure-menu-item">
-      <a class="pure-menu-link" href="https://keybase.io/{{ . }}" rel="me" target="_blank"><i class="fa fa-key fa-fw"></i>Keybase</a>
+      <a class="pure-menu-link" href="https://keybase.io/{{ . }}" rel="me" target="_blank"><i class="fas fa-key"></i>Keybase</a>
     </li>
     {{ end }}
 

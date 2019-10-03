@@ -6,7 +6,7 @@
 </div>
 
 <div class="content">
-  {{ range ( .Paginate (where .Data.Pages "Type" "post")).Pages }}
+  {{ range ( .Paginate (where .Site.RegularPages "Type" "post")).Pages }}
     {{ .Render "summary"}}
   {{ end }}
 

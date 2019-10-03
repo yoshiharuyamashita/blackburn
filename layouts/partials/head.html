@@ -6,6 +6,10 @@
 
   <title>{{ if .IsHome }}{{ .Title }}{{ else }}{{ .Title }} &middot; {{ .Site.Title }}{{ end }}</title>
 
+    {{ if .Params.canonical }}
+    <link rel="canonical" href="{{ .Params.canonical }}">
+    {{ end }}
+
   <!-- CSS -->
   {{ $purecss := "https://cdnjs.cloudflare.com/ajax/libs/pure/1.0.0/" }}
   <link rel="stylesheet" href="{{ $purecss }}pure-min.css">

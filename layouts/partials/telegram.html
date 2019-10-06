@@ -1,0 +1,5 @@
+{{ if or (.Site.Params.Telegram.siteID) (.Site.Params.Telegram.limit) }}
+<!-- Telegram DiscussBot -->
+<div id="telegram_thread"></div>
+<script async src="https://comments.app/js/widget.js?2" data-comments-app-website='{{ .Site.Params.Telegram.siteID }}' data-limit='{{ .Site.Params.Telegram.limit }}'></script>
+{{ end }}

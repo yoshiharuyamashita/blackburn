@@ -6,6 +6,10 @@ author = "Yoshiharu Yamashita"
 copyright = "&copy; 2016. All rights reserved."
 canonifyurls = true
 paginate = 10
+# i18n support
+DefaultContentLanguage = "en"
+# DefaultContentLanguage = "en-us"
+# DefaultContentLanguage = "ja"
 
 [indexes]
   tag = "tags"
@@ -20,6 +24,24 @@ paginate = 10
   # CSS name for highlight.js
   highlightjs = "androidstudio"
   dateFormat = "02 Jan 2006, 15:04"
+
+# i18n config
+# [languages]
+#   [languages.en]
+#     title = "My blog"
+#     weight = 1
+#     [languages.en.params]
+#   [languages.en-us]
+#     weight = 2
+#     [languages.en-us.params]
+#       dateFormat = "Jan 02 2006 15:04"
+#   [languages.ja]
+#     title = "私の日記"
+#     weight = 2
+#     [languages.ja.params]
+#       dateFormat = "2006年1月02日 15:04"
+#       subtitle = "Hugoのテーマ"
+
 
 [menu]
   # Shown in the side menu.

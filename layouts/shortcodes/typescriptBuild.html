@@ -1,0 +1,17 @@
+{{/*
+	I still haven't figured out how to range over the script files 
+	really well. but I have managed to get typescript built with this. 
+	the other things that need changing are compiler options. 
+	which I recommend writing out of the loop maybe even in config.toml?
+	I dont think I need to put this in a partial because not every 
+	web page needs it.
+	
+*/}}
+
+{{ range .Page.Resources.ByType "typescript" }}
+	<p>{{ .Name }} : {{ .Params.Async }}</p>
+	{{ $ts := (js.Build .) }}
+	<script  src="{{ $ts.RelPermalink }}" 
+		 {{ with .Params.async }} 
+		 async="{{ . }}"  {{ end}}></script> 
+{{ end }}

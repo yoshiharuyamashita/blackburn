@@ -1,6 +1,7 @@
 The MIT License (MIT)
 
-Copyright (c) 2016 YOUR_NAME_HERE
+Copyright (c) 2016 Yoshiharu Yamashita
+Copyright (c) 2020 De-Wei Ye
 
 Permission is hereby granted, free of charge, to any person obtaining a copy of
 this software and associated documentation files (the "Software"), to deal in

@@ -1,0 +1,11 @@
+<article>
+
+  <p>
+  {{ .Summary }}
+  </p>
+  {{ if .Truncated }}
+  <footer>
+    <a href="{{ .RelPermalink }}">{{ T "ReadAbout" }}<i class="fa fa-angle-double-right fa-fw"></i></a>
+  </footer>
+  {{ end }}
+</article>

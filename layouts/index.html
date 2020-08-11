@@ -2,8 +2,23 @@
 
 <div class="header">
   <h1>{{ .Title }}</h1>
-  <h2>{{ .Site.Params.subtitle }}</h2>
+    {{ if .Site.Params.from }}
+      <h2 class="quote">
+        <i class="fas fa-quote-left fa-xs"></i>
+        {{ .Site.Params.subtitle }}
+        <i class="fas fa-quote-right fa-xs"></i>
+      </h2>
+      <h3 class="from">── {{ .Site.Params.from }}</h3>
+    {{else}}
+      <h2>{{ .Site.Params.subtitle }}</h2>
+    {{end}}
 </div>
+
+<div class="content">
+    {{ with .Site.GetPage "/about" }}
+      {{ .Render "about"}}
+    {{ end }}
+  </div>
 
 <div class="content">
   {{ range ( .Paginate (where .Site.RegularPages "Type" "post")).Pages }}

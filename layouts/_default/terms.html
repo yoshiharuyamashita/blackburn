@@ -1,7 +1,7 @@
 {{ partial "header.html" . }}
 
 <div class="header">
-  <h1>{{ .Title }}</h1>
+  <h1>{{ T .Title }}</h1>
 </div>
 <div class="content">
   <ul>
@@ -12,6 +12,7 @@
       <span>&#40;{{ $value.Count }}&#41;</span>
     </li>
   {{ end }}
+  
   </ul>
 </div>
 

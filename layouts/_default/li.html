@@ -1,1 +1,7 @@
-<li><time>{{ with .Site.Params.dateFormat }}{{ $.Date.Format . }}{{ else }}{{ .Date.Format "02 Jan 2006, 15:04" }}{{ end }}</time> - <a href="{{ .Permalink }}">{{ .Title }}</a></li>
+<li>
+    <time><span class="date_style">
+        {{ .Date.Format "Jan 02" }}
+    </time></span>
+    <span class="after_date"> - </span>
+    <a href="{{ .Permalink }}">{{ .Title }}</a>
+</li>

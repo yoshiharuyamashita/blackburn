@@ -1,55 +1,73 @@
 <head>
   <meta http-equiv="content-type" content="text/html; charset=utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="google-site-verification" content="pC2le32KaKDSGh9V637p5YC81zixbAMyKN3nPqkKscE" />
+  <script data-ad-client="ca-pub-3454014140664886" async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+
   <meta name="description" content="{{ if .IsNode }}{{ with .Site.Params.description }}{{ . }}{{ end }}{{ else }}{{ with .Description }}{{ . }}{{ end }}{{ end }}">
   {{hugo.Generator}}
 
-  <title>{{ if .IsHome }}{{ .Title }}{{ else }}{{ .Title }} &middot; {{ .Site.Title }}{{ end }}</title>
+  <meta property="og:title" content="{{ .Title }}" />
+  <meta name="twitter:title" content="{{ .Title }}" />
 
-    {{ if .Params.canonical }}
-    <link rel="canonical" href="{{ .Params.canonical }}">
-    {{ end }}
+  <meta property="og:url" content="{{ absURL .RelPermalink }}" />
+  {{ if .Params.image }}
+    <meta property="og:image" content="{{ absURL .Params.image }}">
+    <meta name="twitter:image" content="{{ absURL .Params.image }}">
+    <meta name="twitter:card" content="summary_large_image">
+  {{ else }}
+    <meta name="twitter:card" content="summary">
+  {{ end }}
+
+  <meta name="twitter:site" content="{{ .Site.Title }}">
+  <meta name="twitter:creator" content="{{ .Site.Params.Brand }}">
+  {{ if eq .Type "post"}}
+    <meta name="twitter:description" content="{{ .Summary }}" />
+    <!-- <meta property="og:description" content="{{ .Summary }}" /> -->
+  {{ else }}
+    <meta name="twitter:description" content="{{ .Site.Params.Subtitle }}" />
+    <!-- <meta property="og:description" content="{{ .Site.Params.Subtitle }}" /> -->
+  {{ end }}
+
+  <!-- Preconnect to required origins -->
+  <link rel="preconnect" href="https://s.ytimg.com">
+  <link rel="preconnect" href="https://i.imgur.com">
+
+  <title>{{ if .IsHome }}{{ .Title }}{{ else }}{{ .Title }} &middot; {{ .Site.Title }}{{ end }}</title>
 
   <!-- CSS -->
   {{ $purecss := "https://cdnjs.cloudflare.com/ajax/libs/pure/1.0.0/" }}
-  <link rel="stylesheet" href="{{ $purecss }}pure-min.css">
+  <link rel="stylesheet" href="{{ $purecss }}pure-min.css" media="screen">
 
   {{ "<!--[if lte IE 8]>" | safeHTML }}
-  <link rel="stylesheet" href="{{ $purecss }}grids-responsive-old-ie-min.css">
+  <link async rel="stylesheet" href="{{ $purecss }}grids-responsive-old-ie-min.css" media="screen">
   {{ "<![endif]-->" | safeHTML }}
   {{ "<!--[if gt IE 8]><!-->" | safeHTML }}
-  <link rel="stylesheet" href="{{ $purecss }}grids-responsive-min.css">
+  <link rel="stylesheet" href="{{ $purecss }}grids-responsive-min.css" media="screen">
   {{ "<!--<![endif]-->" | safeHTML }}
 
   {{ "<!--[if lte IE 8]>" | safeHTML }}
-  <link rel="stylesheet" href="/css/side-menu-old-ie.css">
+  <link rel="stylesheet" href="/css/side-menu-old-ie.css" media="screen">
   {{ "<![endif]-->" | safeHTML }}
   {{ "<!--[if gt IE 8]><!-->" | safeHTML }}
-  <link rel="stylesheet" href="/css/side-menu.css">
+  <link rel="stylesheet" href="/css/side-menu.css" media="screen">
   {{ "<!--<![endif]-->" | safeHTML }}
 
-  <link rel="stylesheet" href="/css/blackburn.css">
-
-  <!-- Icons -->
-  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.9.0/css/all.css">
-
-  <!-- Fonts -->
-  <link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet" type="text/css">
+  <link rel="stylesheet" href="/css/blackburn.css" media="screen">
 
   <!-- MathJax -->
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+  {{ partial "mathjax.html" . }}
 
  <!-- RSS -->
-  {{ if .OutputFormats.Get "RSS" }}
-  <link rel="alternate" type="application/rss+xml" title="{{ .Site.Title }}"
-    href='{{ with .OutputFormats.Get "RSS" }}{{ .RelPermalink }}{{ end }}' />
-  {{ end }}
+ {{ if .OutputFormats.Get "RSS" }}
+ <link rel="alternate" type="application/rss+xml" title="{{ .Site.Title }}" href='{{ with .OutputFormats.Get "RSS" }}{{ .RelPermalink }}{{ end }}' />
+ {{ end }}
 
   {{ with .Site.Params.highlightjs }}
-  <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/styles/{{ . }}.min.css">
+  <link async rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/styles/{{ . }}.min.css" media="screen">
   <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/highlight.min.js"></script>
   {{ range $.Site.Params.highlightjs_extra_languages }}
-  <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/languages/{{ . }}.min.js"></script>
+  <script defer src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/languages/{{ . }}.min.js"></script>
   {{ end }}
   <script>hljs.initHighlightingOnLoad();</script>
   {{ end }}
@@ -58,16 +76,16 @@
 
   {{ range .Site.Params.custom_css }}
     {{ if findRE "https?://" . }}
-        <link rel="stylesheet" href="{{ . }}">
+        <link async rel="stylesheet" href="{{ . }}" media="screen">
     {{ else }}
-        <link rel="stylesheet" href="{{ $.Site.BaseURL }}{{ . }}">
+        <link rel="stylesheet" href="{{ $.Site.BaseURL }}{{ . }}" media="screen">
     {{ end }}
   {{ end }}
   {{ range .Site.Params.custom_js }}
     {{ if findRE "https?://" . }}
-        <script src="{{ . }}"></script>
+        <script defer src="{{ . }}"></script>
     {{ else }}
-        <script src="{{ $.Site.BaseURL }}{{ . }}"></script>
+        <script defer src="{{ $.Site.BaseURL }}{{ . }}"></script>
     {{ end }}
   {{ end }}
 

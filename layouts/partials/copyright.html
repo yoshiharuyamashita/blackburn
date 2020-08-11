@@ -1,9 +1,15 @@
 <div>
   <div class="small-print">
-    <small>{{ .Site.Copyright | safeHTML }}</small>
+    <small>Built with&nbsp;<a href="https://gohugo.io/" rel="external noopener" target="_blank">Hugo</a></small>
+    <br>
+    <small>Theme&nbsp;<a href="https://github.com/yoshiharuyamashita/blackburn" rel="external noopener" target="_blank">Blackburn</a></small>
+    <br>
+    <small>Based on&nbsp;<a href="https://purecss.io/" rel="external noopener" target="_blank">Pure CSS</a></small>
+    <br>
+    <small>Icons&nbsp;<a href="https://fontawesome.com" rel="external noopener" target="_blank">Font Awesome</a></small>
+    <br>
   </div>
-  <div class="small-print">
-    <small>Built with&nbsp;<a href="https://gohugo.io/" target="_blank">Hugo</a></small>
-    <small>Theme&nbsp;<a href="https://github.com/yoshiharuyamashita/blackburn" target="_blank">Blackburn</a></small>
-  </div>
+  <a class="small-print" href="{{ .Site.Params.copyrightPage | relLangURL }}">
+        <small>{{ .Site.Copyright | safeHTML }}</small>
+  </a>
 </div>

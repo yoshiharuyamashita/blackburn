@@ -21,7 +21,7 @@ a clear and responsive theme for [Hugo](//gohugo.io).
 * Comments by Disqus
 * Icons by Font Awesome
 
-## [Demo]((https://dwy6626.github.io/))
+## [Demo](https://dwy6626.github.io/)
 
 ![screenshot](./demo.png)
 
@@ -32,7 +32,7 @@ In your Hugo site directory, run:
 ```shell
 $ mkdir themes
 $ cd themes
-$ git clone https://github.com/dwy6626/dw-favored-blackburn.git
+$ git submodule add https://github.com/dwy6626/dw-favored-blackburn.git themes/dw-favored-blackburn
 ```
 
 See [Hugo Quickstart Guide](//gohugo.io/overview/quickstart/) for more information.

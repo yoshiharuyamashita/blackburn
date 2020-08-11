@@ -21,7 +21,10 @@ a clear and responsive theme for [Hugo](//gohugo.io).
 * Comments by Disqus
 * Icons by Font Awesome
 
-## [Demo](https://dwy6626.github.io/)
+## Demo
+
+- [Project Site](https://dwy6626.github.io/dw-favored-blackburn-example/)
+- [My site](https://dwy6626.github.io/)
 
 ![screenshot](./demo.png)
 
@@ -39,7 +42,7 @@ See [Hugo Quickstart Guide](//gohugo.io/overview/quickstart/) for more informati
 
 ## Configuration
 
-**TODO**
+Refers to https://github.com/dwy6626/dw-favored-blackburn-example/blob/master/config.toml
 
 ## Usage
 

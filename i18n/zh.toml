@@ -1,0 +1,23 @@
+[Topics]
+  other = "主題分類"
+
+[Tags]
+  other = "標籤"
+
+[Posts]
+  other = "文章列表"
+
+["Read more"]
+  other = "繼續閱讀"
+
+[ReadAbout]
+  other = "更多關於我"
+
+[Copyright-Head]
+  other = '本文原創部分採用'
+
+[Copyright-Body]
+  other = '創用 CC 姓名標示-非商業性-禁止改作 4.0 國際授權條款'
+
+[Copyright-End]
+  other = '授權。'

@@ -1,0 +1,23 @@
+[Topics]
+  other = "Topics"
+
+[Tags]
+  other = "Tags"
+
+[Posts]
+  other = "Posts"
+
+["Read more"]
+  other = "Read more"
+
+[ReadAbout]
+  other = "more about me"
+
+[Copyright-Head]
+  other = 'This article is licensed under'
+
+[Copyright-Body]
+  other = 'Creative Commons Attribution-NonCommercial-NoDerivatives 4.0 International License'
+
+[Copyright-End]
+  other = '.'

@@ -1,52 +1,29 @@
-# Blackburn
+# DW-Favored-Blackburn
 
-Blackburn is a clear and responsive theme for [Hugo](//gohugo.io).
+Since the [original repo](https://github.com/yoshiharuyamashita/blackburn) is not updated for a long time, I decide to fork this theme and modify it for my website.  
+
+The changelog is too long to list.
+
+## [Blackburn](https://github.com/yoshiharuyamashita/blackburn)
+
+a clear and responsive theme for [Hugo](//gohugo.io).
 
 ## Overview
 
 * Based on Yahoo's [Pure CSS](http://purecss.io/) (v1.0.0)
-* Fixed sidebar with social links:
-  * Twitter
-  * GNU social
-  * Facebook
-  * Google+
-  * Weibo
-  * Tumblr
-  * Instagram
-  * Flickr
-  * 500px
-  * Pinterest
-  * YouTube
-  * Vimeo
-  * Vine
-  * SlideShare
+* Social links: (I delete a lot link lol)
   * LinkedIn
-  * Xing
-  * Reddit
-  * Hacker News
+  - LeetCode
   * GitHub
-  * GitLab
-  * Bitbucket
-  * Stack Overflow
-  * Server Fault
-  * Steam
-  * MobyGames
-  * Last.fm
-  * Discogs
-  * Keybase
-* Client-side syntax highlighting by [Highlight.js](//highlightjs.org) (v9.12.0)
+
+* Client-side syntax highlighting by [Highlight.js](//highlightjs.org)
 * Web analytics by Google Analytics
 * Comments by Disqus
-* Icons by Font Awesome (v5.9.0)
+* Icons by Font Awesome
 
-## Demo
+## [Demo]((https://dwy6626.github.io/))
 
-* [Demo](http://themes.gohugo.io/theme/blackburn/)
-* You can also see it in action on my personal website [here](http://yoshiharuyamashita.com/)
-
-## Screenshots
-
-![screenshot](https://raw.githubusercontent.com/yoshiharuyamashita/blackburn/master/images/screenshot.png)
+![screenshot](./demo.png)
 
 ## Installation
 
@@ -55,123 +32,14 @@ In your Hugo site directory, run:
 ```shell
 $ mkdir themes
 $ cd themes
-$ git clone https://github.com/yoshiharuyamashita/blackburn.git
+$ git clone https://github.com/dwy6626/dw-favored-blackburn.git
 ```
-
-or download from [here](//github.com/yoshiharuyamashita/blackburn/archive/master.zip).
 
 See [Hugo Quickstart Guide](//gohugo.io/overview/quickstart/) for more information.
 
 ## Configuration
 
-Example config.toml:
-
-```toml
-baseurl = "https://www.example.com/" # Make sure to end baseurl with a '/'
-title = "Your site title"
-author = "Your name"
-# Shown in the side menu
-copyright = "&copy; 2016. All rights reserved."
-canonifyurls = true
-paginate = 10
-
-[indexes]
-  tag = "tags"
-  topic = "topics"
-
-[params]
-  # Shown in the home page
-  subtitle = "A Hugo Theme"
-  brand = "Blackburn"
-  googleAnalytics = "Your Google Analytics tracking ID"
-  disqus = "Your Disqus shortname"
-  # CSS name for highlight.js
-  highlightjs = "androidstudio"
-  highlightjs_extra_languages = ["yaml"]
-  dateFormat = "02 Jan 2006, 15:04"
-  # Include any custom CSS and/or JS files
-  # (relative to /static folder)
-  custom_css = ["css/my.css"]
-  custom_js = ["js/my.js"]
-
-  [params.piwikAnalytics]
-    siteid = 2
-    piwikroot = "//analytics.example.com/"
-
-[menu]
-  # Shown in the side menu.
-  [[menu.main]]
-    name = "Home"
-    pre = "<i class='fa fa-home fa-fw'></i>"
-    weight = 1
-    identifier = "home"
-    url = "/"
-  [[menu.main]]
-    name = "Posts"
-    pre = "<i class='fa fa-list fa-fw'></i>"
-    weight = 2
-    identifier = "post"
-    url = "/post/"
-  [[menu.main]]
-    name = "About"
-    pre = "<i class='fa fa-user fa-fw'></i>"
-    weight = 3
-    identifier = "about"
-    url = "/about/"
-  [[menu.main]]
-    name = "Contact"
-    pre = "<i class='fa fa-phone fa-fw'></i>"
-    weight = 4
-    url = "/contact/"
-
-[social]
-  # Link your social networking accounts to the side menu
-  # by entering your username or ID.
-
-  # SNS microblogging
-  twitter = "*"
-  gnusocial = "*" # Specify href (e.g. https://quitter.se/yourusername)
-  facebook = "*"
-  googleplus = "*"
-  weibo = "*"
-  tumblr = "*"
-
-  # SNS photo/video sharing
-  instagram = "*"
-  flickr = "*"
-  photo500px = "*"
-  pinterest = "*"
-  youtube = "*"
-  vimeo = "*"
-  vine = "*"
-  slideshare = "*"
-
-  # SNS career oriented
-  linkedin = "*"
-  xing = "*"
-
-  # SNS news
-  reddit = "*"
-  hackernews = "*"
-
-  # Techie
-  github = "yoshiharuyamashita"
-  gitlab = "*"
-  bitbucket = "*"
-  stackoverflow = "*"
-  serverfault = "*"
-
-  # Gaming
-  steam = "*"
-  mobygames = "*"
-
-  # Music
-  lastfm = "*"
-  discogs = "*"
-
-  # Other
-  keybase = "*"
-```
+**TODO**
 
 ## Usage
 

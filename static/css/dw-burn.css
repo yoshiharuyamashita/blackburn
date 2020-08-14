@@ -78,6 +78,12 @@ body {
     color: #666
 }
 
+div.content img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+}
+
 /* for smaller screen */
 @media (max-width: 38em) {
     .header h1 {

@@ -2,7 +2,32 @@
 
 Since the [original repo](https://github.com/yoshiharuyamashita/blackburn) is not updated for a long time, I decide to fork this theme and modify it for my website.  
 
-The changelog is too long to list.
+The test version is `0.74.3`
+
+## Changelog from [Blackburn](https://github.com/yoshiharuyamashita/blackburn)
+
+some important things:
+
+- All images are responsive now! (no need to add `fluid_img` shortcode for every images)
+- [Make the side menu scrollable](https://github.com/yoshiharuyamashita/blackburn/issues/92)
+- [Reading Time](https://github.com/yoshiharuyamashita/blackburn/issues/89)
+- OG and Twitter card support (for social media sharing)
+  - [Twitter validator](https://cards-dev.twitter.com/validator)
+  - [Facebook sharing debugger](https://developers.facebook.com/tools/debug/)
+- Copyright BY-CC-ND 4.0 in each post
+- Color customization
+- [i18n support](https://gohugo.io/content-management/multilingual/)
+- `404.html`
+- better w3c
+  - preconnect to imgur
+  - [aria-label](https://www.w3.org/TR/using-aria/)
+  - [better SEO](#seo-of-my-website)
+- Larger texts in menu 
+- RSS template in `layouts/rss.xml`
+- New list format (less redundancy)
+- Mathjax configuration in `layouts/partials/mathjax.html`
+
+The full changelog is too long (and I don't remember... sorry) to list.
 
 ## [Blackburn](https://github.com/yoshiharuyamashita/blackburn)
 
@@ -27,6 +52,10 @@ a clear and responsive theme for [Hugo](//gohugo.io).
 - [My site](https://dwy6626.github.io/)
 
 ![screenshot](./demo.png)
+
+### SEO of my website
+
+![SEO 100](./SEO.png)
 
 ## Installation
 
@@ -104,24 +133,6 @@ where each positional parameter is separated by the vertical bar (i.e., |).
 - `alt`: specifies an alternate text for an image (optional)
 
 See [here](http://yoshiharuyamashita.com/post/hugo-shortcode-to-show-multiple-images/) for examples.
-
-### fluid_img (obsolete)
-
-#### Positional
-
-```
-{{% fluid_img "/path/to/img" %}}
-```
-
-#### Named
-
-```
-{{% fluid_img class="pure-u-1-2" src="/path/to/img" alt="img description" %}}
-{{% fluid_img class="pure-u-1-3" src="/path/to/img" caption="img description" %}}
-```
-
-* `class`, `alt` and `caption` are optional.
-* See [Pure CSS Grids](http://purecss.io/grids/) for possible `class` values.
 
 ## License
 

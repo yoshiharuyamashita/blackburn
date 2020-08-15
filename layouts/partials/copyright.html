@@ -1,17 +1,21 @@
-<div>
-  <div class="small-print">
-    <small>Built with&nbsp;<a href="https://gohugo.io/" rel="external noopener" target="_blank">Hugo</a></small>
-    <br>
-    <small>W/&nbsp;<a href="https://github.com/dwy6626/dw-favored-blackburn" rel="external noopener" target="_blank">DW-Favored-Blackburn</a></small>
-    <br>
-    <small>Based on&nbsp;<a href="https://github.com/yoshiharuyamashita/blackburn" rel="external noopener" target="_blank">Blackburn</a></small>
-    <br>
-    <small>and&nbsp;<a href="https://purecss.io/" rel="external noopener" target="_blank">Pure CSS</a></small>
-    <br>
-    <small>Icons&nbsp;<a href="https://fontawesome.com" rel="external noopener" target="_blank">Font Awesome</a></small>
-    <br>
-  </div>
-  <a class="small-print" href="{{ .Site.Params.copyrightPage | relLangURL }}">
-        <small>{{ .Site.Copyright | safeHTML }}</small>
+<div class="copyright-small">
+  Built with <a href="https://gohugo.io/" rel="external noopener" target="_blank">Hugo</a>
+</div>
+<div class="copyright-small">
+  W/ <a href="https://github.com/dwy6626/dw-favored-blackburn" rel="external noopener" target="_blank">DW-Favored-Blackburn</a>
+</div>
+<div class="copyright-small">
+  Based on <a href="https://github.com/yoshiharuyamashita/blackburn" rel="external noopener" target="_blank">Blackburn</a>
+</div>
+<div class="copyright-small">
+  and <a href="https://purecss.io/" rel="external noopener" target="_blank">Pure CSS</a>
+</div>
+<div class="copyright-small">
+  Icons <a href="https://fontawesome.com" rel="external noopener" target="_blank">Font Awesome</a>
+</div>
+
+<div class="copyright-small">
+  <a href="{{ .Site.Params.copyrightPage | relLangURL }}">
+    {{ .Site.Copyright | safeHTML }}
   </a>
 </div>

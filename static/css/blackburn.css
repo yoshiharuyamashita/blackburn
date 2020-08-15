@@ -14,8 +14,8 @@ a:visited {
   color: #265778;
 }
 
-.small-print {
-  font-size: 0.8em;
+div.copyright-small {
+  font-size: 0.7em;
   margin: 0.6em;
 }
 
@@ -49,10 +49,6 @@ article > footer {
 
 #menu {
   overflow-y: visible;
-}
-
-#menu a {
-  padding: 0.6em;
 }
 
 #menu .brand {

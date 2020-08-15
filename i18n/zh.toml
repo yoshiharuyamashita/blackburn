@@ -10,6 +10,9 @@
 ["Read more"]
   other = "繼續閱讀"
 
+[ReadingTime]
+  other = "{{ .Count }} 分鐘"
+
 [ReadAbout]
   other = "更多關於我"
 

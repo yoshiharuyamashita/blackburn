@@ -31,4 +31,12 @@
   {{ end }}
   {{ end }}
 
+  
+  {{ if .Site.Params.ReadingTime }}
+    <div>
+      <i class="fas fa-clock"></i>
+      {{ i18n "ReadingTime" .ReadingTime }}
+    </div>
+  {{ end }}
+
 </div>

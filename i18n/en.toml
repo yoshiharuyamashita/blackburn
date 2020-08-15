@@ -10,6 +10,9 @@
 ["Read more"]
   other = "Read more"
 
+[ReadingTime]
+  other = "{{ .Count }} min."
+
 [ReadAbout]
   other = "more about me"
 

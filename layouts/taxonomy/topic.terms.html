@@ -11,7 +11,13 @@
   </h2>
     <ul>
         {{ range $value.Pages }}
-          {{ .Render "li" }}
+          <li>
+            <time><span class="date_style">
+              {{ .Date.Format "2006 Jan 02" }}
+            </time></span>
+            <span class="after_date"> - </span>
+            <a href="{{ .Permalink }}">{{ .Title }}</a>
+          </li>        
         {{ end }}
     </ul>
   {{ end }}

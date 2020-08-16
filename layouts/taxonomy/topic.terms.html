@@ -1,0 +1,20 @@
+{{ partial "header.html" . }}
+
+<div class="header">
+  <h1>{{ T .Title }}</h1>
+</div>
+<div class="content">
+  {{ range $key, $value := .Data.Terms.ByCount }}
+  <h2>
+    <a href="{{ $value.Name | urlize }}">{{ $value.Name }}</a>
+    <span>&#40;{{ $value.Count }}&#41;</span>
+  </h2>
+    <ul>
+        {{ range $value.Pages }}
+          {{ .Render "li" }}
+        {{ end }}
+    </ul>
+  {{ end }}
+</div>
+
+{{ partial "footer.html" . }}

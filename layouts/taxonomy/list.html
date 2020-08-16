@@ -5,9 +5,12 @@
 </div>
 
 <div class="content">
-  {{ range .RegularPages }}
+  list
+  {{ range (.Paginate .RegularPages).Pages }}
     {{ .Render "summary"}}
   {{ end }}
+
+  {{ template "_internal/pagination.html" . }}
 </div>
 
 {{ partial "footer.html" . }}

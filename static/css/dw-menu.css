@@ -39,6 +39,25 @@ a.pure-menu-link span {
     font-size: .8em;
 }
 
+ul.pagination {
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    list-style-type: none;
+    padding-inline-start: 0;
+    padding-inline-end: 0;
+}
+
+ul.pagination a {
+    justify-content: center;
+    display: inline-flex;
+    font-size: 1em;
+    vertical-align: top;
+    font-size: 1.1em;
+    margin: .5em;
+    font-weight: bold;
+}
+
 @media (min-width: 48em) {
 
     #layout {
@@ -61,5 +80,14 @@ a.pure-menu-link span {
 
     #layout.active {
         left: 160px;
+    }
+}
+
+@media (max-width: 360px) {
+    ul.pagination a {
+        margin: .3em;
+    }
+    #main {
+        font-size: .9em;
     }
 }

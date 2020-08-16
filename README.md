@@ -15,6 +15,8 @@ some important things:
   - [Twitter validator](https://cards-dev.twitter.com/validator)
   - [Facebook sharing debugger](https://developers.facebook.com/tools/debug/)
 - Copyright BY-CC-ND 4.0 in each post
+- Use Hugo default pagination
+![pagination](images/pagination.png)
 - Color customization
 - [i18n support](https://gohugo.io/content-management/multilingual/)
 - `404.html`
@@ -51,11 +53,11 @@ a clear and responsive theme for [Hugo](//gohugo.io).
 - [Project Site](https://dwy6626.github.io/dw-favored-blackburn-example/)
 - [My site](https://dwy6626.github.io/)
 
-![screenshot](./demo.png)
+![screenshot](images/demo.png)
 
 ### SEO of my website
 
-![SEO 100](./SEO.png)
+![SEO 100](images/SEO.png)
 
 ## Installation
 

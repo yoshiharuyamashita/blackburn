@@ -73,6 +73,11 @@ div.content img {
     display: block;
 }
 
+div.content li+li a {
+    display: inline-flex;
+    padding-top: 1em;
+}
+
 div.post-meta li {
     display: inline-flex;
     list-style-type: none;
@@ -83,6 +88,8 @@ div.post-meta li {
 
 div.post-meta a {
     white-space: nowrap;
+    display: inline-block;
+    padding-bottom: .5em;
 }
 
 div.post-meta a:hover, a:focus {

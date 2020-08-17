@@ -15,6 +15,17 @@
   </li>
 </div>
 
+{{ if .Site.Params.ReadingTime }}
+<div>
+  <li>
+    <i class="fas fa-clock fa-fw"></i>
+    <span>
+      {{ i18n "ReadingTime" .ReadingTime }}
+    </span>
+  </li>
+</div>
+{{ end }}
+
 <div>
   {{ if isset .Params "topics" }}
     {{ $count := len .Params.topics }}
@@ -44,16 +55,5 @@
     {{ end }}
   {{ end }}
 </div>
-  
-  {{ if .Site.Params.ReadingTime }}
-    <div>
-      <li>
-        <i class="fas fa-clock fa-fw"></i>
-        <span>
-          {{ i18n "ReadingTime" .ReadingTime }}
-        </span>
-      </li>
-    </div>
-  {{ end }}
 
 </div>

@@ -64,13 +64,37 @@ code:not([class]) {
 }
 
 body {
-    color: #666
+    color: #333
 }
 
 div.content img {
     max-width: 100%;
     height: auto;
     display: block;
+}
+
+div.post-meta li {
+    display: inline-flex;
+    list-style-type: none;
+    justify-content: center;
+    align-items: center;
+    border-radius: 10px;
+}
+
+div.post-meta a {
+    white-space: nowrap;
+}
+
+div.post-meta a:hover, a:focus {
+    text-decoration: none;
+}
+
+div.post-meta a li:hover, a li:focus {
+    background-color: #eee;
+}
+
+div.post-meta span, li {
+    padding: 0 .2em 0 .3em;
 }
 
 /* for smaller screen */

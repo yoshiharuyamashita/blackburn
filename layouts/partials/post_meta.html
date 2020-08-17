@@ -1,14 +1,18 @@
 <div class="post-meta">
 
 <div>
-  <i class="fa fa-calendar fa-fw"></i>
-  <time>
-    {{ with .Site.Params.dateFormat }}
-      {{ $.Date.Format . }}
-    {{ else }}
-      {{ .Date.Format "02 Jan 2006, 15:04" }}
-    {{ end }}
+  <li>
+    <i class="fa fa-calendar fa-fw"></i>
+    <time>
+      <span>
+        {{ with .Site.Params.dateFormat }}
+          {{ $.Date.Format . }}
+        {{ else }}
+          {{ .Date.Format "02 Jan 2006, 15:04" }}
+        {{ end }}
+      </span>
   </time>
+  </li>
 </div>
 
 <div>
@@ -16,10 +20,12 @@
     {{ $count := len .Params.topics }}
     {{ if gt $count 0 }}
         {{ range $k, $v := .Params.topics }}
-          <a class="post-taxonomy-topic" href={{ "topics" | absLangURL }}/{{ $v | urlize }}> 
-            <i class="fas fa-folder fa-fw"></i>&nbsp;{{ $v }} 
-          </a>
-        {{ if lt $k (sub $count 1) }}&nbsp;{{ end }}
+        <a class="post-taxonomy-topic" href={{ "topics" | absLangURL }}/{{ $v | urlize }}> 
+          <li>
+            <i class="fas fa-folder fa-fw"></i>
+            <span>{{ $v }}</span>
+          </li>
+        </a>
       {{ end }}
     {{ end }}
   {{ end }}
@@ -27,24 +33,26 @@
   {{ if isset .Params "tags" }}
     {{ $count := len .Params.tags }}
     {{ if gt $count 0 }}
-      {{ if (and (isset .Params "topics") (gt (len .Params.topics) 0)) }}
-        &nbsp;
-      {{ end }}
       {{ range $k, $v := .Params.tags }}
-        <a class="post-taxonomy-tag" href={{ "tags" | absLangURL }}/{{ $v | urlize }}>
-          <i class="fas fa-tag fa-fw"></i>&nbsp;{{ $v }}
-        </a>
-        {{ if lt $k (sub $count 1) }}&nbsp;{{ end }}
+      <a class="post-taxonomy-tag" href={{ "tags" | absLangURL }}/{{ $v | urlize }}>
+        <li>
+          <i class="fas fa-tag fa-fw"></i>
+          <span>{{ $v }}</span>
+        </li>
+      </a>
       {{ end }}
     {{ end }}
   {{ end }}
 </div>
-
   
   {{ if .Site.Params.ReadingTime }}
     <div>
-      <i class="fas fa-clock fa-fw"></i>
-      {{ i18n "ReadingTime" .ReadingTime }}
+      <li>
+        <i class="fas fa-clock fa-fw"></i>
+        <span>
+          {{ i18n "ReadingTime" .ReadingTime }}
+        </span>
+      </li>
     </div>
   {{ end }}
 

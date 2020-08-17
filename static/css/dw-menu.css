@@ -51,11 +51,19 @@ ul.pagination {
 ul.pagination a {
     justify-content: center;
     display: inline-flex;
-    font-size: 1em;
-    vertical-align: top;
+    border-radius: 10px;
+}
+
+ul.pagination li {
+    justify-content: center;
     font-size: 1.1em;
-    margin: .5em;
     font-weight: bold;
+    margin: 1em;
+}
+
+ul.pagination a:hover, a:focus {
+    background-color: #eee;
+    text-decoration: none;
 }
 
 @media (min-width: 48em) {
@@ -83,11 +91,14 @@ ul.pagination a {
     }
 }
 
-@media (max-width: 360px) {
-    ul.pagination a {
-        margin: .3em;
+@media (min-width: 500px) {
+    div.mobile{
+        display: none;
     }
-    #main {
-        font-size: .9em;
+}
+
+@media (max-width: 501px) {
+    div.desktop{
+        display: none;
     }
 }

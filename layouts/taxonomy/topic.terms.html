@@ -6,6 +6,7 @@
 <div class="content">
   {{ range $key, $value := .Data.Terms.ByCount }}
   <h2>
+    <i class="fas fa-folder fa-fw"></i>
     <a href="{{ $value.Name | urlize }}">{{ $value.Name }}</a>
     <span>&#40;{{ $value.Count }}&#41;</span>
   </h2>

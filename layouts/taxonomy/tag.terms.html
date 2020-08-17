@@ -7,7 +7,9 @@
   <ul>
     {{ range $key, $value := .Data.Terms.ByCount }}
     <li>
-      <a href="{{ $value.Name | urlize }}">{{ $value.Name }}</a>
+      <a href="{{ $value.Name | urlize }}">
+        <i class="fas fa-tag fa-fw"></i>&nbsp;{{ $value.Name }}
+      </a>
       <span>&#40;{{ $value.Count }}&#41;</span>
     </li>
   {{ end }}

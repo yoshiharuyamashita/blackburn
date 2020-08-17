@@ -1,33 +1,44 @@
 <div class="post-meta">
 
-  <div>
-    <i class="fa fa-calendar fa-fw"></i>
-    <time>{{ with .Site.Params.dateFormat }}{{ $.Date.Format . }}{{ else }}{{ .Date.Format "02 Jan 2006, 15:04" }}{{ end }}</time>
-  </div>
-
-  {{ if isset .Params "topics" }}
-  {{ $count := len .Params.topics }}
-  {{ if gt $count 0 }}
-  <div>
-    <i class="fa fa-folder fa-fw"></i>
-    {{ range $k, $v := .Params.topics }}
-      <a class="post-taxonomy-topic" href={{ "topics" | absLangURL }}/{{ $v | urlize }}> {{ $v }} </a>{{ if lt $k (sub $count 1) }}&nbsp;&#47;{{ end }}
+<div>
+  <i class="fa fa-calendar fa-fw"></i>
+  <time>
+    {{ with .Site.Params.dateFormat }}
+      {{ $.Date.Format . }}
+    {{ else }}
+      {{ .Date.Format "02 Jan 2006, 15:04" }}
     {{ end }}
-  </div>
-  {{ end }}
+  </time>
+</div>
+
+<div>
+  {{ if isset .Params "topics" }}
+    {{ $count := len .Params.topics }}
+    {{ if gt $count 0 }}
+        {{ range $k, $v := .Params.topics }}
+          <a class="post-taxonomy-topic" href={{ "topics" | absLangURL }}/{{ $v | urlize }}> 
+            <i class="fas fa-folder fa-fw"></i>&nbsp;{{ $v }} 
+          </a>
+        {{ if lt $k (sub $count 1) }}&nbsp;{{ end }}
+      {{ end }}
+    {{ end }}
   {{ end }}
 
   {{ if isset .Params "tags" }}
-  {{ $count := len .Params.tags }}
-  {{ if gt $count 0 }}
-  <div>
-    <i class="fa fa-tags fa-fw"></i>
-    {{ range $k, $v := .Params.tags }}
-      <a class="post-taxonomy-tag" href={{ "tags" | absLangURL }}/{{ $v | urlize }}>{{ $v }}</a>{{ if lt $k (sub $count 1) }}&nbsp;&#47;{{ end }}
+    {{ $count := len .Params.tags }}
+    {{ if gt $count 0 }}
+      {{ if (and (isset .Params "topics") (gt (len .Params.topics) 0)) }}
+        &nbsp;
+      {{ end }}
+      {{ range $k, $v := .Params.tags }}
+        <a class="post-taxonomy-tag" href={{ "tags" | absLangURL }}/{{ $v | urlize }}>
+          <i class="fas fa-tag fa-fw"></i>&nbsp;{{ $v }}
+        </a>
+        {{ if lt $k (sub $count 1) }}&nbsp;{{ end }}
+      {{ end }}
     {{ end }}
-  </div>
   {{ end }}
-  {{ end }}
+</div>
 
   
   {{ if .Site.Params.ReadingTime }}

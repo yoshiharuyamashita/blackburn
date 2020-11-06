@@ -71,11 +71,12 @@
         <script src="{{ $.Site.BaseURL }}{{ . }}"></script>
     {{ end }}
   {{ end }}
-  
-  {{ if .Params.custom_css }}
-	 <style>
-		{{ . }}
-	</style>
+
+  {{ range .Params.custom_css }}
+		<link rel="stylesheet" href="{{ . }}">
+  {{ end }} 
+  {{ range .Params.custom_js }}
+		<script src="{{ . }}"></script>
   {{ end }} 
   
 </head>

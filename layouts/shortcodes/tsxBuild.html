@@ -9,9 +9,15 @@
 */}}
 
 {{ range .Page.Resources.ByType "typescript" }}
-	<p>{{ .Name }} : {{ .Params.Async }}</p>
 	{{ $ts := (js.Build .) }}
 	<script  src="{{ $ts.RelPermalink }}" 
+		 {{ with .Params.async }} 
+		 async="{{ . }}"  {{ end}}></script> 
+{{ end }}
+
+{{ range .Page.Resources.ByType "jsx" }}
+	{{ $jsx := (js.Build .) }}
+	<script  src="{{ $jsx.RelPermalink }}" 
 		 {{ with .Params.async }} 
 		 async="{{ . }}"  {{ end}}></script> 
 {{ end }}

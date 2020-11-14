@@ -63,6 +63,7 @@
         <link rel="stylesheet" href="{{ $.Site.BaseURL }}{{ . }}">
     {{ end }}
   {{ end }}
+  
   {{ range .Site.Params.custom_js }}
     {{ if findRE "https?://" . }}
         <script src="{{ . }}"></script>
@@ -71,4 +72,11 @@
     {{ end }}
   {{ end }}
 
+  {{ range .Params.custom_css }}
+		<link rel="stylesheet" href="{{ . }}">
+  {{ end }} 
+  {{ range .Params.custom_js }}
+		<script src="{{ . }}"></script>
+  {{ end }} 
+  
 </head>

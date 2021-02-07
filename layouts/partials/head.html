@@ -38,7 +38,7 @@
   <link href="https://fonts.googleapis.com/css2?family=Raleway&display=swap" rel="stylesheet" type="text/css">
 
   <!-- MathJax -->
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.9/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+  <script async src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.9/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
 
  <!-- RSS -->
   {{ if .OutputFormats.Get "RSS" }}
@@ -48,9 +48,9 @@
 
   {{ with .Site.Params.highlightjs }}
   <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/10.6.0/styles/{{ . }}.min.css">
-  <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/10.6.0/highlight.min.js"></script>
+  <script async src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/10.6.0/highlight.min.js"></script>
   {{ range $.Site.Params.highlightjs_extra_languages }}
-  <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/10.6.0/languages/{{ . }}.min.js"></script>
+  <script async src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/10.6.0/languages/{{ . }}.min.js"></script>
   {{ end }}
   <script>hljs.initHighlightingOnLoad();</script>
   {{ end }}

@@ -4,7 +4,7 @@
     {{ if .OutputFormats.Get "RSS" }}
     <li class="pure-menu-item">
       <a class="pure-menu-link" href='{{ with .OutputFormats.Get "RSS" }}{{ .RelPermalink }}{{ end }}'><i
-          class="fas fa-rss"></i>RSS</a>
+          class="fas fa-rss fa-fw"></i>RSS</a>
     </li>
     {{ end }}
 
@@ -100,7 +100,7 @@
 
     {{ with .Site.Social.linkedin }}
     <li class="pure-menu-item">
-      <a class="pure-menu-link" href="https://linkedin.com/in/{{ . }}" rel="me" target="_blank"><i class="fab fa-linkedin"></i></i>LinkedIn</a>
+      <a class="pure-menu-link" href="https://linkedin.com/in/{{ . }}" rel="me" target="_blank"><i class="fab fa-linkedin fa-fw"></i>LinkedIn</a>
     </li>
     {{ end }}
 

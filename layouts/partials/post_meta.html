@@ -7,6 +7,15 @@
 
   {{ $baseUrl := .Site.BaseURL }}
 
+  <!-- IndieWeb Author Insertion -->
+  {{ with $.Param "author" }}
+  <div>
+    <i class="fa fa-address-card fa-fw"></i>
+    <a rel="author" class="p-author h-card" href="{{ with .Params.authorcard }}{{ . }}{{ else }}{{ $baseUrl }}/about/{{ end }}">{{ . }}</a>
+  </div>
+  {{ end }}  
+
+
   {{ if isset .Params "topics" }}
   {{ $count := len .Params.topics }}
   {{ if gt $count 0 }}

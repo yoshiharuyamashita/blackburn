@@ -37,6 +37,15 @@
   <link rel="preconnect" href="https://fonts.gstatic.com">
   <link href="https://fonts.googleapis.com/css2?family=Raleway&display=swap" rel="stylesheet" type="text/css">
 
+  <!-- IndieAuth OpenID -->
+  <link rel="openid.delegate" href="{{ site.BaseURL }}" />
+  <link rel="openid.server" href="https://openid.indieauth.com/openid" />
+  
+  <!-- IndieAuth PGPKey Method -->
+  {{ with .Site.Params.pgpkey }}
+  <link rel="pgpkey" href="{{ . }}">
+  {{ end }}
+
   <!-- MathJax -->
   <script async src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.9/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
 

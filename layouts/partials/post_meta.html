@@ -2,7 +2,7 @@
 
   <div>
     <i class="fa fa-calendar fa-fw"></i>
-    <time class="dt-published">{{ with .Site.Params.dateFormat }}{{ $.Date.Format . }}{{ else }}{{ .Date.Format "02 Jan 2006, 15:04" }}{{ end }}</time>
+    <a class="u-url" href="{{ .Permalink }}"><time class="dt-published">{{ with .Site.Params.dateFormat }}{{ $.Date.Format . }}{{ else }}{{ .Date.Format "02 Jan 2006, 15:04 MST" }}{{ end }}</time></a>
   </div>
 
   {{ $baseUrl := .Site.BaseURL }}

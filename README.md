@@ -34,10 +34,10 @@ Blackburn is a clear and responsive theme for [Hugo](//gohugo.io).
   * Last.fm
   * Discogs
   * Keybase
-* Client-side syntax highlighting by [Highlight.js](//highlightjs.org) (v10.6.0)
-* Web analytics by Google Analytics
-* Comments by Disqus
-* Icons by Font Awesome (v5.9.0)
+* Client-side syntax highlighting by [Highlight.js](https://highlightjs.org) (v10.6.0)
+* Web analytics by Piwik, Google Analytics, or [GoatCounter](https://www.goatcounter.com/)
+* Comments by Disqus or [Commento](https://www.commento.io/)
+* Icons by Font Awesome (v5.15.2)
 
 ## Demo
 

@@ -1,0 +1,14 @@
+<div class="h-card">
+	<div class="pure-g">
+		<div class="pure-u-1-1">
+			<div style="padding: 0 .2em">
+				<img class="u-photo pure-img-responsive" src="{{ .Get "photo" }}">
+			</div>
+		</div>
+	</div>
+  My name is <span class="p-name">{{ .Get "name" }}</span>, or more formally <span class="p-honorific-prefix">{{ .Get "honorific" }}</span> <span class="p-given-name">{{ .Get "given-name" }}</span> <abbr class="p-additional-name">{{ .Get "middle-name" }}</abbr> <span class="p-family-name">{{ .Get "family-name" }}</span>.<br />
+  My nickname is <span class="p-nickname">{{ .Get "nickname" }}</span>.
+  This site you're on, entitled <a class="u-url u-uid" rel="me" href="{{ site.BaseURL }}">{{ site.Title }}</a>, is my personal website as part of the <a href="https://indieweb.org/">IndieWeb</a><br />
+  
+  If you need to contact me, please encrypt your messages using <a class="u-key" href="{{ .Get "keyurl" }}">my public key</a>.
+</div>

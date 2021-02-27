@@ -1,14 +1,16 @@
 {{ partial "header.html" . }}
-
+<article class="h-entry">
 <div class="header">
-  <h1>{{ .Title }}</h1>
-  <h2>{{ .Description }}</h2>
+  <h1 class="p-name">{{ .Title }}</h1>
+  <h2 class="p-summary">{{ .Description }}</h2>
 </div>
 <div class="content">
 
   {{ partial "post_meta.html" . }}
 
+<div class="e-content">
   {{ .Content }}
+</div>
   
   {{ partial "share.html" . }}
 
@@ -21,5 +23,6 @@
   {{ partial "telegram.html" . }}
 
 </div>
+</article>
 
 {{ partial "footer.html" . }}
